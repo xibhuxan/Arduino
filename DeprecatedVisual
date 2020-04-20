@@ -1,0 +1,53 @@
+ 
+
+La primera línea sale en rojo con el error: 
+
+#include errors detected. Please update your includePath. Squiggles are disabled for this translation unit "UNA RUTA"  
+cannot open source file "avr/pgmspace.h" (dependency of "UNA RUTA")
+Para quitarla es añadir en c_cpp_properties.json en el includePath, la ruta "/opt/arduino-1.8.9/hardware/tools/avr/avr/include" desde vuestra ruta de instalación de arduino, hay que hacerlo con cada proyecto.
+
+Cuando deja de detectar la clase Serial, para ponerla otra vez a funcionar, hay que añadir en cada c_cpp_properties un nuevo apartado "defines": [ "USBCON" ]
+
+Para hacer formatear el texto en visual studio code, en debian 10, falta una librería, por lo que hay que instalar "sudo apt install clang-format-7" o la versión que esté disponible, buscamos el binario con "whereis clang-format-7" y donde esté el archivo lo pegamos en el visual studio, en opciones de extensión, c/c++, y buscamos C_Cpp: Clang_format_path y editamos, se añade la línea "C_Cpp.clang_format_path": "/usr/bin/clang-format-7" en mi caso
+
+Y luego si aun pide el archivo. Con clang-format-8 no se hace lo de abajo
+sudo ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so /usr/lib/x86_64-linux-gnu/libtinfo.so.5
+
+
+
+
+Ir a opciones de extensiones, a cualquier edit, y añadir lo siguiente. Con esto se evitan los errores de librerias y Serial.
+{
+    "arduino.path": "/opt/arduino-1.8.9/",
+    "window.zoomLevel": 1,
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.includePath": ["${workspaceRoot}",
+        "/opt/arduino-1.8.9/hardware/arduino/avr/**",
+        "/opt/arduino-1.8.9/tools/**",
+        "/opt/arduino-1.8.9/hardware/tools/**",
+        "/opt/arduino-1.8.9/libraries/**",
+        "/home/xibhu/Arduino/libraries/**"],
+    "C_Cpp.default.forcedInclude": ["/opt/arduino-1.8.9/hardware/arduino/avr/cores/arduino/Arduino.h"],
+    "C_Cpp.default.defines": ["ARDUINO=10800",
+        "USBCON"]
+}
+
+Después de añadir esto, en cada carpeta al hacer el initialize hay que editar el c_cpp_properties.json y dejarlo similar a esto.
+
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}"
+            ],
+            "forcedInclude": [
+                "${default}"
+            ],
+            "compilerPath": "${default}"
+        }
+    ],
+    "version": 4
+}

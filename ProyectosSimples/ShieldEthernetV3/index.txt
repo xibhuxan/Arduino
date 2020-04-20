@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<meta charset='utf-8'/>
+<html>
+<head>
+<style>
+.button{
+  background-color: rgb(123, 40, 231);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover{
+  background-color: rgb(40, 69, 231);
+}
+.button:active{
+  background-color: rgb(194, 58, 58);
+}
+span{
+  padding: 5px;
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}
+input{
+  padding: 5px;
+  margin-right: 5px;
+}
+</style>
+</head>
+    <h1>Activación remota de autómata</h1>
+    <h4>Utilizando Arduino Uno + Shield Ethernet SD + Relés</h4>
+    <a href="/pin2"><button class="button">Conmutar Pin <b>2</b></button></a><br>
+    <form><input type="text" name="pwm"><input type="submit" class="button" value="Enviar PWM Pin 3"></form>
+    <!--<a href="/pin3"><button class="button">Conmutar Pin <b>3</b></button></a><br>-->
+    <a href="/pin5"><button class="button">Conmutar Pin <b>5</b></button></a><br>
+    <a href="/pin6"><button class="button">Conmutar Pin <b>6</b></button></a><br>
+    <a href="/pin7"><button class="button">Conmutar Pin <b>7</b></button></a><br>
+    <a href="/pin8"><button class="button">Conmutar Pin <b>8</b></button></a><br>
+    <a href="/pin9"><button class="button">Conmutar Pin <b>9</b></button></a><br>
+</html>
+ 
