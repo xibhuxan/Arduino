@@ -52,7 +52,7 @@ Primero se va de nuevo al archivo settings "File, Preferences, Settings, User, E
 }
 ```
 
-Y por último cuando se abre una carpeta de proyecto que contendrá los archivos de arduino, y se le da initialize, se crea una carpeta .vscode con un archivo llamado c_cpp_properties.json, este archivo será necesario editarlo en cada proyecto cambiando una línea, y dejarlo a algo similar a esto.
+Cuando se abre una carpeta de proyecto que contendrá los archivos de arduino, y se le da initialize, se crea una carpeta .vscode con un archivo llamado c_cpp_properties.json, este archivo será necesario editarlo en cada proyecto cambiando una línea, y dejarlo a algo similar a esto.
 
 ```
 {
@@ -71,5 +71,8 @@ Y por último cuando se abre una carpeta de proyecto que contendrá los archivos
     "version": 4
 }
 ```
+
+Para que vscode tenga acceso a los usb, el usuario debe tener los permisos. Tras esto, reiniciar.
+`sudo adduser yourUserName dialout`
 
 Todo lo explicado es para que funcione en mi pc, a ustedes es posible que solo necesiteis parte, o incluso algo distinto para hacerlo funcionar o solucionar los errores. Y recordar editar las rutas con las propias.
