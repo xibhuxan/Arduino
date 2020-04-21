@@ -17,10 +17,10 @@ La carpeta de ["Librerias"](Librerias) contiene las librerias utilizadas, ya sea
 
 El archivo de ["EnlacesInterés.md"](EnlacesInterés.md) contiene distintos enlaces de tutoriales, módulos y más cosas.
 
-En mi caso utilizo el editor de texto Visual Studio Code en linux/debian con el plugin o extensión de Arduino hecho por microsoft.
-
 Para reportar fallos utilizad el sistema de ["Issues"](https://github.com/Xibhu/Arduino/issues) de la web. O bien el correo electrónico `xibhuxan@gmail.com`.
 
 Los códigos sacados de terceras personas, mantendrán los créditos dentro del mismo, con la información que hayan dejado como páginas web.
+
+En mi caso utilizo el editor de texto Visual Studio Code en linux/debian con el plugin o extensión de Arduino hecho por microsoft.
 
 Para utilizar VSCode en linux es necesario seguir unos pasos descritos en ["InstalaciónVisualStudioCode.md"](InstalaciónVisualStudioCode.md).
