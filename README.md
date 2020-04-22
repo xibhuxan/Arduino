@@ -2,7 +2,7 @@
 # Arduino
 Los códigos están pendientes de revisión, reestructuración, y edición. Progresivamente se irá mejorando.
 
-Aquí se colocarán distintos proyectos basados en arduino y sus sensores.
+Aquí se colocarán distintos proyectos basados en arduino UNO y sus sensores. Para el resto de modelos de arduinos es posible que sea necesario hacer modificaciones al código en base a los pines usados, librerías, o cualquier otra diferencia que tengan con el modelo UNO.
 
 El repositorio está ordenado de la siguiente manera:
 
