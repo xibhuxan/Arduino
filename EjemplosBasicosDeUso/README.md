@@ -11,10 +11,10 @@ Los sensores y actuadores más básicos se pueden clasificar de forma general en
 Estos cuatro grupos, que comprenden una gran variedad de componentes, se pueden programar con el mismo código sin ningún problema, por lo que ahorra una cantidad significativa de proyectos en este listado.
 
 - [Puerto serie](SerialPort)
-- Sensores digitales
-- Sensores analógicos
-- Actuadores digitales
-- Actuadores analógicos
+- [Sensores digitales](SensorDigital)
+- [Sensores analógicos](SensorAnalogico)
+- [Actuadores digitales](ActuadorDigital)
+- [Actuadores analógicos](ActuadorAnalogico)
 - [Led interno](LEDinterno)
 - [Led interno con mejora en el tiempo](LEDinternoTiempoMejorado)
 - [Led externo](LEDexterno)
