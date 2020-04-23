@@ -1,6 +1,8 @@
 
 # Arduino
-Los códigos están pendientes de revisión, reestructuración, y edición. Progresivamente se irá mejorando.
+Los códigos están pendientes de revisión, reestructuración, y edición. Progresivamente se irá mejorando. Se modificarán tanto archivos como estructuras sin aviso previo.
+
+Puedes ayudar mediante una donación. [![paypal](https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZM8VWFAP5UUY&source=url)
 
 Aquí se colocarán distintos proyectos basados en arduino UNO y sus sensores. Para el resto de modelos de arduinos es posible que sea necesario hacer modificaciones al código en base a los pines usados, librerías, o cualquier otra diferencia que tengan con el modelo UNO.
 
@@ -18,7 +20,7 @@ La carpeta de ["Librerias"](Librerias) contiene las librerias utilizadas, ya sea
 
 El archivo de ["EnlacesInterés.md"](EnlacesInterés.md) contiene distintos enlaces de tutoriales, módulos y más cosas.
 
-Para reportar fallos utilizad el sistema de ["Issues"](https://github.com/Xibhu/Arduino/issues) de la web. O bien el correo electrónico `xibhuxan@gmail.com`.
+Para reportar fallos utilizad el sistema de ["Issues"](https://github.com/Xibhu/Arduino/issues) de la web.
 
 Los códigos sacados de terceras personas, mantendrán los créditos dentro del mismo, con la información que hayan dejado como páginas web.
 
