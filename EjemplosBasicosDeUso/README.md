@@ -8,7 +8,7 @@ Los sensores y actuadores más básicos se pueden clasificar de forma general en
 - Actuadores digitales. Escribe un 1 o 0 en la salida.
 - Actuadores analógicos. Escribe un valor entre 0 y 255.
 
-Estos cuatro grupos, que comprenden una gran variedad de componentes, se pueden programar con el mismo código sin ningún problema, por lo que ahorra una cantidad significativa de proyectos en este listado.
+Estos cuatro grupos, que comprenden una gran variedad de componentes, se pueden programar con el mismo código sin ningún problema, por lo que ahorra una cantidad significativa de proyectos en este listado. Por lo tanto, todos los sensores que se puedan utilizar de la misma manera, no se listarán de momento, por cuestiones de tiempo.
 
 - [Puerto serie](SerialPort)
 - [Sensores digitales](SensorDigital)
