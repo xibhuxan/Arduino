@@ -1,3 +1,5 @@
+Página con muchísimo contenido de arduino: https://lastminuteengineers.com/
+
 Buscador de partes fritzing: https://arduinomodules.info/
 
 Usar librerias: http://www.lunegate.net/2015/10/tutorial-aprender-usar-librerias-en.html
