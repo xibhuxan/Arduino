@@ -29,3 +29,4 @@ https://minibots.wordpress.com/componentes-fritzing/
 - [PWM](PWMsalida)
 - [Potenciómetro](PotenciómetroPWM)
 - [Encoder](Encoder)
+- [IR sensor movimiento](IRmovimiento)
