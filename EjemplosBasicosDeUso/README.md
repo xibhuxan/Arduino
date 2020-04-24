@@ -22,3 +22,4 @@ Estos cuatro grupos, que comprenden una gran variedad de componentes, se pueden 
 - [Botón sin resistencia](BotonSinResistencia)
 - [PWM](PWMsalida)
 - [Potenciómetro](PotenciómetroPWM)
+- [Encoder](Encoder)
