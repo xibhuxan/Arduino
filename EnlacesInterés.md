@@ -1,3 +1,9 @@
+Fritzing y más: https://github.com/adafruit/Fritzing-Library/
+
+Fritzing: https://github.com/RafaGS/Fritzing
+
+Librerías: https://github.com/RobTillaart/Arduino
+
 Página con muchísimo contenido de arduino: https://lastminuteengineers.com/
 
 Buscador de partes fritzing: https://arduinomodules.info/
