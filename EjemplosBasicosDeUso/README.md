@@ -26,3 +26,5 @@ https://minibots.wordpress.com/componentes-fritzing/
 - [Potenciómetro](PotenciómetroPWM)
 - [Encoder](Encoder)
 - [IR sensor movimiento](IRmovimiento)
+- [DHT](DHT)
+- [Motor paso a paso](MotorPasoPaso)

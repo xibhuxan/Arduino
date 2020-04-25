@@ -1,3 +1,5 @@
+Fritzing: https://github.com/e-radionicacom/e-radionica.com-Fritzing-Library-parts-
+
 Fritzing y más: https://github.com/adafruit/Fritzing-Library/
 
 Fritzing: https://github.com/RafaGS/Fritzing
