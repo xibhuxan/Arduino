@@ -22,7 +22,7 @@ El archivo de ["EnlacesInterés.md"](EnlacesInterés.md) contiene distintos enla
 
 Para reportar fallos utilizad el sistema de ["Issues"](https://github.com/Xibhu/Arduino/issues) de la web.
 
-Los códigos sacados de terceras personas, mantendrán los créditos dentro del mismo, con la información que hayan dejado como páginas web.
+Los códigos sacados de terceras personas, mantendrán los créditos en distintas partes del repositorio, sus enlaces a web pueden estar en el archivo `EnlacesInterés.md` como en el código, etc.
 
 En mi caso utilizo el editor de texto Visual Studio Code en linux/debian con el plugin o extensión de Arduino hecho por microsoft.
 
