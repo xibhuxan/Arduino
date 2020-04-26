@@ -28,3 +28,4 @@ https://minibots.wordpress.com/componentes-fritzing/
 - [IR sensor movimiento](IRmovimiento)
 - [DHT](DHT)
 - [Motor paso a paso](MotorPasoPaso)
+- [Motor servo](MotorServo)
