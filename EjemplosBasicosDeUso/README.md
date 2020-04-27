@@ -29,3 +29,4 @@ https://minibots.wordpress.com/componentes-fritzing/
 - [DHT](DHT)
 - [Motor paso a paso](MotorPasoPaso)
 - [Motor servo](MotorServo)
+- [Motor DC](MotorDC)
