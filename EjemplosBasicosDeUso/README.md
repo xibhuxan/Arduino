@@ -10,8 +10,6 @@ Los sensores y actuadores más básicos se pueden clasificar de forma general en
 
 Estos cuatro grupos, que comprenden una gran variedad de componentes, se pueden programar con el mismo código sin ningún problema, por lo que ahorra una cantidad significativa de proyectos en este listado. Por lo tanto, todos los sensores que se puedan utilizar de la misma manera, no se listarán de momento, por cuestiones de tiempo.
 
-https://minibots.wordpress.com/componentes-fritzing/
-
 - [Puerto serie](SerialPort)
 - [Sensores digitales](SensorDigital)
 - [Sensores analógicos](SensorAnalogico)
@@ -30,3 +28,4 @@ https://minibots.wordpress.com/componentes-fritzing/
 - [Motor paso a paso](MotorPasoPaso)
 - [Motor servo](MotorServo)
 - [Motor DC](MotorDC)
+- [Ultrasonido](Ultrasonido)
