@@ -18,7 +18,7 @@ La carpeta de ["ProyectosComplejos"](ProyectosComplejos) son aquellos que se con
 
 La carpeta de ["Librerias"](Librerias) contiene las librerias utilizadas, ya sean oficiales como no oficiales. Las creadas por mi se caracterizan por tener XB en el nombre. Para saber las librerías que se necesitan, hay que leer las líneas que ponen `#include <LIBRERIA.h>` en cada código. Si no pone nada no se necesitan librerías extras. Si lo pone, puede que ya vengan incluidas con el programa de arduino, si al verificar el código da error de libreria no encontrada, entonces hay que descargarla, bien desde el propio gestor de librerias del arduino, desde aquí, de su página oficial, o de donde la encontreis. Al tener el zip, se descomprime para tener una carpeta, y esta se debe colocar en `carpetaDeUsuario/Arduino/libraries`.
 
-El archivo de ["EnlacesInterés.md"](EnlacesInterés.md) contiene distintos enlaces de tutoriales, módulos y más cosas.
+El archivo de ["EnlacesInterés.md"](EnlacesInterés.md) contiene distintos enlaces como repositorios de FRITZING, tutoriales, módulos, créditos enlazando la web de los creadores, y más cosas.
 
 Para reportar fallos utilizad el sistema de ["Issues"](https://github.com/Xibhu/Arduino/issues) de la web.
 
