@@ -30,3 +30,4 @@ Estos cuatro grupos, que comprenden una gran variedad de componentes, se pueden 
 - [Motor DC](MotorDC)
 - [Ultrasonido](Ultrasonido)
 - [Botonera](Botonera)
+- [DFplayer MP3](MP3dfplayer)
