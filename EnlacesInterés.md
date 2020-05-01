@@ -1,4 +1,5 @@
 
+Tutoriales: https://www.14core.com/
 
 Fritzing: https://minibots.wordpress.com/componentes-fritzing/
 
