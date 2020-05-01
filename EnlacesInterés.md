@@ -1,3 +1,5 @@
+
+
 Fritzing: https://minibots.wordpress.com/componentes-fritzing/
 
 Fritzing: https://github.com/e-radionicacom/e-radionica.com-Fritzing-Library-parts-
@@ -11,6 +13,8 @@ Librerías: https://github.com/RobTillaart/Arduino
 Página con muchísimo contenido de arduino: https://lastminuteengineers.com/
 
 Buscador de partes fritzing: https://arduinomodules.info/
+
+DFplayer Fritzing: https://github.com/mcauser/Fritzing-Part-DFRobot-DFPlayer-Mini
 
 Usar librerias: http://www.lunegate.net/2015/10/tutorial-aprender-usar-librerias-en.html
 
