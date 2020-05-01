@@ -1,4 +1,6 @@
 
+L298P Shield: https://protosupplies.com/product/l298p-motor-driver-shield/
+
 Tutoriales: https://www.14core.com/
 
 Fritzing: https://minibots.wordpress.com/componentes-fritzing/
