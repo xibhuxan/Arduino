@@ -1,0 +1,166 @@
+
+#include <Adafruit_GFX.h>
+#include <Adafruit_TFTLCD.h>
+#include <TouchScreen.h>
+#include <Vector.h>
+
+#define TS_MINX 200
+#define TS_MINY 180
+#define TS_MAXX 945
+#define TS_MAXY 905
+
+#define LCD_CS A3
+#define LCD_CD A2
+#define LCD_WR A1
+#define LCD_RD A0
+#define LCD_RESET A4
+
+#define YP A1
+#define XM A2
+#define YM 7
+#define XP 6
+
+#define BLACK 0x0000
+#define BLUE 0x001F
+#define RED 0xF800
+#define GREEN 0x07E0
+#define CYAN 0x07FF
+#define MAGENTA 0xF81F
+#define YELLOW 0xFFE0
+#define WHITE 0xFFFF
+
+#define MINPRESSURE 10
+#define MAXPRESSURE 1000
+
+#define LONG_SIDE 320
+#define SHORT_SIDE 240
+
+TouchScreen ts = TouchScreen(XP, YP, XM, YM, 300);
+Adafruit_TFTLCD tft(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET);
+
+long tiempoContaje;
+const int cantidadPrecision = 5;
+int valoresPrecision[cantidadPrecision];
+int indicePrecision = 0;
+bool sentidoRelleno = true;
+bool bloqueo;
+
+TSPoint p;
+Vector<int> v;
+
+void setup()
+{
+
+    tft.reset();
+    uint16_t identifier = tft.readID();
+    tft.begin(0x9341);
+    tft.setRotation(1);
+    tft.fillScreen(RED);
+    Serial.begin(9600);
+    
+}
+
+void loop()
+{
+
+    comprobarPantalla();
+
+    int x1 = p.x;
+    int y1 = p.y;
+
+    if (pantallaPisada())
+    {
+        tft.fillCircle(x1,y1,3,BLACK);
+        /*
+        int x2 = LONG_SIDE / 2;
+        int y2 = SHORT_SIDE / 2;
+        int xf = x1 - x2;
+        int yf = y1 - y2;
+        int d = sqrt(pow((xf), 2) + pow((yf), 2));
+        
+        tft.drawCircle(x2, y2, d, BLACK);
+        */
+    }
+    //tft.fillCircle(x1, y1, 3, BLACK);
+}
+
+
+void comprobarPantalla()
+{
+    comprobarPantalla(1);
+}
+void comprobarPantalla(int tiempo)
+{
+
+    if (millis() - tiempo > tiempoContaje)
+    {
+        tiempoContaje = millis();
+        p = ts.getPoint();
+        pinMode(XM, OUTPUT);
+        pinMode(YP, OUTPUT);
+        p.x = map(p.x, TS_MINX, TS_MAXX, 0, 320);
+        p.y = map(p.y, TS_MINY, TS_MAXY, 0, 240);
+        rellenarArray(p.z);
+    }
+}
+
+void rellenarArray(int valor)
+{
+    valoresPrecision[indicePrecision] = valor;
+
+    indicePrecision++;
+    if (indicePrecision >= cantidadPrecision)
+    {
+        indicePrecision = 0;
+    }
+}
+
+bool pantallaPisada()
+{
+
+    bool pisada = false;
+    for (int i = 0; i < cantidadPrecision; i++)
+    {
+        if (valoresPrecision[i] != 0)
+        {
+            pisada = true;
+            break;
+        }
+    }
+
+    return pisada && p.z > MINPRESSURE;
+}
+
+class Pantalla
+{
+private:
+    /* data */
+public:
+    Pantalla(/* args */);
+    ~Pantalla();
+};
+
+Pantalla::Pantalla(/* args */)
+{
+}
+
+Pantalla::~Pantalla()
+{
+}
+
+//Funcion original, no tocar
+/*
+TSPoint waitTouch()
+{
+    TSPoint p;
+    do
+    {
+        p = ts.getPoint();
+        pinMode(XM, OUTPUT);
+        pinMode(YP, OUTPUT);
+    } while ((p.z < MINPRESSURE) || (p.z > MAXPRESSURE));
+    p.x = map(p.x, TS_MINX, TS_MAXX, 0, 320);
+    p.y = map(p.y, TS_MINY, TS_MAXY, 0, 240);
+    return p;
+}
+*/
