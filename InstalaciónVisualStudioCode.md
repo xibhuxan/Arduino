@@ -73,6 +73,8 @@ Cuando se abre una carpeta de proyecto que contendrá los archivos de arduino, y
 ```
 
 Para que vscode tenga acceso a los usb, el usuario debe tener los permisos. Tras esto, reiniciar.
-`sudo adduser yourUserName dialout`
+`sudo adduser yourUserName dialout`  
+O bien:  
+`sudo usermod -a -G dialout MY_USER_NAME`
 
 Todo lo explicado es para que funcione en mi pc, a ustedes es posible que solo necesiteis parte, o incluso algo distinto para hacerlo funcionar o solucionar los errores. Y recordar editar las rutas con las propias.
