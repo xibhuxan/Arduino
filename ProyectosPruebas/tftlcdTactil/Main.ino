@@ -5,22 +5,33 @@
 #include <XibFrame.h>
 #include <XibComponent.h>
 
+
 TouchScreen XibXcreen::ts = TouchScreen(XP, YP, XM, YM, 300);
 Adafruit_TFTLCD XibXcreen::tft = Adafruit_TFTLCD(LCD_CS, LCD_CD, LCD_WR, LCD_RD, LCD_RESET);
 TSPoint XibXcreen::tsp;
 
 XibInterface xcn;
-
+    XibBoton b;
 void setup()
 {
+    Serial.begin(9600);
     XibXcreen::tft.reset();
     XibXcreen::tft.begin(MODEL);
+    XibXcreen::tft.setRotation(3);
 
-    XibXcreen::tft.setRotation(0);
     XibFrame m;
     m.setColor(GREEN);
+    m.setColor(RED);
+    m.setMaxLayers(2);
 
+
+    b.setCoor(50,6,100,100);
+    b.setLayer(1);
+
+    m.addComponent(b);
     xcn.addFrame(m);
+
+
     xcn.drawFrame(0);
     /*
     scn.init(&ts, &tft, &tsp);
@@ -41,10 +52,10 @@ void loop()
     int x1 = XibXcreen::tsp.x;
     int y1 = XibXcreen::tsp.y;
 
-    if (xcn.isScreenTouched())
+    if (b.CoorInsideMe(x1,y1))
     {
         //tft.fillCircle(x1,y1,3,BLACK);
-
+    Serial.println("HOLA");
         int x2 = LONG_SIDE / 2;
         int y2 = SHORT_SIDE / 2;
         int xf = x1 - x2;
