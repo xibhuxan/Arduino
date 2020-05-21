@@ -1,4 +1,4 @@
-*.directory 
-*.vscode
-*.vscode/
-*.json
+.directory
+.vscode/
+.json
+build
