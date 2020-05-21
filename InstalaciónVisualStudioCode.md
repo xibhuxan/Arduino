@@ -71,6 +71,13 @@ Cuando se abre una carpeta de proyecto que contendrá los archivos de arduino, y
     "version": 4
 }
 ```
+Otro archivo que se crea es el de arduino.json, este contendrá la configuración del arduino, como modelo de la placa, usb a usar. Una de las opciones que se puede añadir es la de output para que reutilice archivos compilados y tarde menos en subir los programas.
+```
+{
+"output": "build"
+}
+```
+
 
 Para que vscode tenga acceso a los usb, el usuario debe tener los permisos. Tras esto, reiniciar.
 `sudo adduser yourUserName dialout`  
