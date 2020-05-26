@@ -82,6 +82,10 @@ Otro archivo que se crea es el de arduino.json, este contendrá la configuració
 Para que vscode tenga acceso a los usb, el usuario debe tener los permisos. Tras esto, reiniciar.
 `sudo adduser yourUserName dialout`  
 O bien:  
-`sudo usermod -a -G dialout MY_USER_NAME`
+`sudo usermod -a -G dialout username`
+Extras:  
+`sudo usermod -a -G uucp username`
+`sudo usermod -a -G lock username`
+`sudo usermod -a -G tty username`
 
 Todo lo explicado es para que funcione en mi pc, a ustedes es posible que solo necesiteis parte, o incluso algo distinto para hacerlo funcionar o solucionar los errores. Y recordar editar las rutas con las propias.
