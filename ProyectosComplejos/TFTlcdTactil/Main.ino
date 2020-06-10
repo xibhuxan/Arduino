@@ -1,5 +1,5 @@
 /*
- Creater by: Xibhu
+ Created by: Xibhu
  www.github.com/xibhu
  
  Esta librería es un gestor de interfaces basado en pantallas y botones.
