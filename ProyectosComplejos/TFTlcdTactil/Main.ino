@@ -1,4 +1,44 @@
-
+/*
+ Creater by: Xibhu
+ www.github.com/xibhu
+ 
+ Esta librería es un gestor de interfaces basado en pantallas y botones.
+ La librería funciona de la siguiente manera.
+ Hay un controlador de interfaz "XibInterface" que controla y maneja las pulsaciones y llamadas a componentes.
+ Dentro de este controlador se añaden "XibFrame" que son las distintas pantallas.
+ Dentro de cada pantalla, se añaden "XibCompRect" que actúan como botones.
+ 
+ Características.
+ Código no bloqueante, se pueden utilizar con normalidad actuadores y sensores.
+ Librería "universal" debería funcionar en todas las pantallas que puedan utilizar las librerías de Adafruit_TFTLCD. Solo cambiando los parámetros que te interese en "XibXcreenValues".
+ Componentes generales en "XibInterface" para que afecten a todos los "XibFrame" y no repetir código.
+ Componentes colocados mediante porcentajes.
+ Componentes con rotación AUTOMÁTICA, solo hay que aplicar la rotación como en el ejemplo, y automáticamente todos los componentes se reajustan en tamaño para mantener las proporciones.
+ Componentes con texto.
+ Componentes con colores.
+ Componentes con patrón observador para asignarle funciones cuando son pisados.
+ 
+ Esto es un ejemplo de lo que se puede hacer, como son un menú, un cuadro que se puede arrastrar, y un paint.
+ 
+ La pantalla tiene limitaciones, la más importante y la que más afecta a la librería en cómo está construida,
+ es en el tiempo de dibujado, no he mirado especificaciones, pero toda la pantalla tarda en dibujarse como un segundo.
+ Por lo tanto se han hecho algunos trucos:
+ Hay 3 formas de refrescar el contenido de la pantalla.
+    Dibujar toda la pantalla, con el fondo de pantalla(lleva su tiempo)
+    Dibujar todos los componentes, sin el fondo, dependiendo de la cantidad de componentes, es muchísimo más rápido.
+    Dibujar un solo componente que interese en ese momento. La manera más rápida de dibujar.
+ 
+ La librería tiene implementada diferentes clases, estrategias y demás joyas chungas.
+    LinkedList
+    Patrón observador
+    Diferencias de tiempo (no delays)
+    Functors
+    Funciones lambda
+    
+En el loop solo se coloca la función que comprueba el táctil, todo el ajuste de la interfaz va en el setup. Que haya solo una línea en el loop es posible al patrón observador y sus llamadas en cadena.
+Si se necesita que un componente se modifique a través de un sensor o información externa, se coloca esa modificación en el loop y luego se llama a su función "DrawMySelf()".
+ 
+ */
 
 #include <XibXcreen.h>
 #include <XibInterface.h>
@@ -268,7 +308,7 @@ void setup()
     ButtonF2PictureSpace.color = WHITE;
     ButtonF2PictureSpace.Attach(FramePaint);
 
-    //Add frames inside interface
+    //Add frames inside the interface
     xcn.addFrame(Frame0);
     xcn.addFrame(Frame1);
     xcn.addFrame(Frame2);
