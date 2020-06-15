@@ -1,0 +1,15 @@
+ 
+XibTM1638 KEYWORD2
+init KEYWORD2
+setBright KEYWORD2
+sendCommand KEYWORD2
+resetCommand KEYWORD2
+readButtons KEYWORD2
+sendData KEYWORD2
+onRed KEYWORD2
+onGreen KEYWORD2
+onRedGreen KEYWORD2
+offLed KEYWORD2
+writeDisplay KEYWORD2
+writeDisplayShift KEYWORD2
+cleanDisplay KEYWORD2

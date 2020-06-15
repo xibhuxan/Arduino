@@ -1,0 +1,39 @@
+#######################################
+#MyRealTimeClock
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+MyRealTimeClock	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+getBUS	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+
+#######################################
+#######################################
+
+VersalinoBUS	KEYWORD1
+VersalinoPIN	KEYWORD1
+PINS	KEYWORD2
+BUSA	KEYWORD2
+BUSB	KEYWORD2
+TX	LITERAL1
+RX	LITERAL1
+AN0	LITERAL1
+AN1	LITERAL1
+AN2	LITERAL1
+D1	LITERAL1
+P1	LITERAL1
+D2	LITERAL1
+P2	LITERAL1
+D3	LITERAL1
+P3	LITERAL1
