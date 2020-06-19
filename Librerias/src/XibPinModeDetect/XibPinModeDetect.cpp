@@ -18,7 +18,7 @@ int XibPinModeDetect::getMode(){
     reg = portModeRegister(port);
     out = portOutputRegister(port);
 
-    if(!*reg && !*out)return 0; //INPUT
-    if(!*reg && *out)return 1;  //INPUT_PULLUP
-    if(*reg && !*out)return 2;  //OUTPUT
+    if(!*reg && !*out)return 0; //0,0 -> INPUT
+    if(!*reg && *out)return 1;  //0,32 -> INPUT_PULLUP
+    if(*reg && !*out)return 2;  //32,0 -> OUTPUT
 }
