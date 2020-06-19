@@ -18,7 +18,7 @@ void XibTempo::disable()
 {
     enabled = false;
 }
-void XibTempo::execFunctionTimed(void (*f)())
+void XibTempo::execTimedFunction(void (*f)())
 {
     if(enabled && (millis() - millisStart >= millisDuration)){
         millisStart = millis();

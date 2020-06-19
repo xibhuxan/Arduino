@@ -9,7 +9,7 @@ public:
     ~XibTempo();
     void enable();//let the timer works, it's the default
     void disable();//stops the timer
-    void execFunctionTimed(void (*f)());//executes the code with the time
+    void execTimedFunction(void (*f)());//executes the code with the time
     long timeRemaining();//returns the time remaining to complete the cycle
     long millisStart;
     long millisDuration;

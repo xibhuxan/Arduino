@@ -13,7 +13,7 @@ void setup()
 
 void loop()
 {
-	temp1.execFunctionTimed([](){
+	temp1.execTimedFunction([](){
         digitalWrite(13, ledOn);
         ledOn = !ledOn;
     });
