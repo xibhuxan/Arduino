@@ -13,11 +13,11 @@ Se le dan los permisos de usuario.
 Se instala VSCode desde sitios oficiales como su página oficial. https://code.visualstudio.com/  
 Ya instalado se instala la extensión de Arduino oficial de Microsoft, se busca en su buscador. Además se instalará la extensión para C/C++.
 
+Con todo instalado ahora hay que decirle al VSCode dónde está el arduino para que pueda acceder a sus recursos. Para ello se va a "File, Preferences, Settings, User, Extensions, Arduino configuration" y en "Arduino path" se coloca `/opt/arduino-1.8.10/` o la ruta que corresponda.
+
 # Opcional
 
 Esta parte no me ha hecho falta con Fedora 32.
-
-Con todo instalado ahora hay que decirle al VSCode dónde está el arduino para que pueda acceder a sus recursos. Para ello se va a "File, Preferences, Settings, User, Extensions, Arduino configuration" y en "Arduino path" se coloca `/opt/arduino-1.8.10/` o la ruta que corresponda.
 
 Con esto ya se tiene acceso a las funciones de verificar, subir, initialize, configurar placa, etc. Ahora para usarlo como un verdadero IDE es necesario realizar unos pasos extras, ya que de normal va a dar unos errores de que no encuentra las librerias que se utilizan, además del autocompletado y formateo de texto.
 
