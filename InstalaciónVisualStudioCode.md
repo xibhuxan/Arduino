@@ -11,7 +11,7 @@ Se le dan los permisos de usuario.
 `sudo chown $USER:$USER /opt/arduino-1.8.10/`
 
 Se instala VSCode desde sitios oficiales como su página oficial. https://code.visualstudio.com/  
-Ya instalado se instala la extensión de Arduino oficial de Microsoft, se busca en su buscador. Además se instalará la extensión para C/C++.
+Ya con vscode, se instala la extensión de Arduino oficial de Microsoft, en su buscador se escribe Arduino y una de las primeras opciones. Además se instalará la extensión para C/C++.
 
 Con todo instalado ahora hay que decirle al VSCode dónde está el arduino para que pueda acceder a sus recursos. Para ello se va a "File, Preferences, Settings, User, Extensions, Arduino configuration" y en "Arduino path" se coloca `/opt/arduino-1.8.10/` o la ruta que corresponda.
 
@@ -38,7 +38,7 @@ Si da un error de que no se encuentra libtinfo.so.5 o similar, se puede realizar
 
 Para que desaparezcan los errores de libreria son dos pasos, primero añadir las rutas por defecto en un fichero, y luego en cada proyecto utilizar las rutas por defecto.
 
-Primero se va de nuevo al archivo settings "File, Preferences, Settings, User, Extensions, C/C++" y se pisa en cualquier `edit in settings.json`. Y se deja a algo similar a los siguiente, todo dependerá de vuestras rutas reales y usuario. Las más importantes son las que empiezan con C_Cpp, estas solucionan los errores de librería, y un típico error con el objeto Serie.
+Primero se va de nuevo al archivo settings "File, Preferences, Settings, User, Extensions, C/C++" y se pisa en cualquier `edit in settings.json`. Y se deja a algo similar a los siguiente, todo dependerá de vuestras rutas reales y usuario. Las más importantes son las que empiezan con C_Cpp, estas solucionan los errores de librería, y un típico error con el objeto Serie. Las líneas 3, 4 y 5 no hacen falta, es automático en principio.
 
 ```
 {
@@ -60,7 +60,7 @@ Primero se va de nuevo al archivo settings "File, Preferences, Settings, User, E
 }
 ```
 
-Cuando se abre una carpeta de proyecto que contendrá los archivos de arduino, y se le da initialize, se crea una carpeta .vscode con un archivo llamado c_cpp_properties.json, este archivo será necesario editarlo en cada proyecto cambiando una línea, y dejarlo a algo similar a esto.
+Cuando se abre una carpeta que se convertirá en un proyecto que contendrá los archivos de arduino, se le da initialize, se rellenan los campos que pide, y automáticamente se crea una carpeta .vscode con un archivo llamado c_cpp_properties.json, este archivo será necesario editarlo en cada proyecto cambiando todas estas líneas, y dejarlo a algo similar a esto. Copiar y pegar.
 
 ```
 {
@@ -87,13 +87,13 @@ Otro archivo que se crea es el de arduino.json, este contendrá la configuració
 ```
 
 
-Para que vscode tenga acceso a los usb, el usuario debe tener los permisos. Tras esto, reiniciar.
+Para que vscode tenga acceso a los usb, el usuario debe tener los permisos. Tras esto, reiniciar.  
 `sudo adduser yourUserName dialout`  
 O bien:  
-`sudo usermod -a -G dialout username`
+`sudo usermod -a -G dialout username`  
 Extras:  
-`sudo usermod -a -G uucp username`
-`sudo usermod -a -G lock username`
-`sudo usermod -a -G tty username`
+`sudo usermod -a -G uucp username`  
+`sudo usermod -a -G lock username`  
+`sudo usermod -a -G tty username`  
 
 Todo lo explicado es para que funcione en mi pc, a ustedes es posible que solo necesiteis parte, o incluso algo distinto para hacerlo funcionar o solucionar los errores. Y recordar editar las rutas con las propias.
