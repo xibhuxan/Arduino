@@ -13,6 +13,10 @@ Se le dan los permisos de usuario.
 Se instala VSCode desde sitios oficiales como su página oficial. https://code.visualstudio.com/  
 Ya instalado se instala la extensión de Arduino oficial de Microsoft, se busca en su buscador. Además se instalará la extensión para C/C++.
 
+# Opcional
+
+Esta parte no me ha hecho falta con Fedora 32.
+
 Con todo instalado ahora hay que decirle al VSCode dónde está el arduino para que pueda acceder a sus recursos. Para ello se va a "File, Preferences, Settings, User, Extensions, Arduino configuration" y en "Arduino path" se coloca `/opt/arduino-1.8.10/` o la ruta que corresponda.
 
 Con esto ya se tiene acceso a las funciones de verificar, subir, initialize, configurar placa, etc. Ahora para usarlo como un verdadero IDE es necesario realizar unos pasos extras, ya que de normal va a dar unos errores de que no encuentra las librerias que se utilizan, además del autocompletado y formateo de texto.
@@ -27,6 +31,10 @@ Se va a "File, Preferences, Settings, User, Extensions, C/C++" y en cualquier `e
 
 Si da un error de que no se encuentra libtinfo.so.5 o similar, se puede realizar el siguiente comando.  
 `sudo ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so /usr/lib/x86_64-linux-gnu/libtinfo.so.5`
+
+(Acaba opcional)
+
+---
 
 Para que desaparezcan los errores de libreria son dos pasos, primero añadir las rutas por defecto en un fichero, y luego en cada proyecto utilizar las rutas por defecto.
 
