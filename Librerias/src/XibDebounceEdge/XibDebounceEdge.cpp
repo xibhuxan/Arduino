@@ -7,6 +7,8 @@ XibDebounceEdge::XibDebounceEdge(uint32_t debounceDuration)
 
 XibDebounceEdge::~XibDebounceEdge() {}
 
+//void functions
+
 void XibDebounceEdge::whenRisingEdge(bool inputData, void (*f)())
 {
   if (inputData != lastInputDataState)
@@ -84,6 +86,106 @@ void XibDebounceEdge::whenDeactive(bool inputData, void (*f)())
     if (!inputData)
     {
       f();
+    }
+  }
+  lastInputDataState = inputData;
+}
+
+//Bool functions
+
+bool XibDebounceEdge::whenRisingEdge(bool inputData)
+{
+  if (inputData != lastInputDataState)
+  {
+    lastDebounceTime = millis();
+  }
+
+  if ((millis() - lastDebounceTime) > debounceDuration)
+  {
+
+    if (inputData != inputDataState)
+    {
+      inputDataState = inputData;
+
+      if (inputDataState == HIGH)
+      {
+        return true;
+      }
+    }
+    else
+    {
+      return false;
+    }
+  }
+  lastInputDataState = inputData;
+}
+
+bool XibDebounceEdge::whenFallingEdge(bool inputData)
+{
+  if (inputData != lastInputDataState)
+  {
+    lastDebounceTime = millis();
+  }
+
+  if ((millis() - lastDebounceTime) > debounceDuration)
+  {
+
+    if (inputData != inputDataState)
+    {
+      inputDataState = inputData;
+
+      if (inputDataState == LOW)
+      {
+        return true;
+      }
+    }
+    else
+    {
+      return false;
+    }
+  }
+  lastInputDataState = inputData;
+}
+
+bool XibDebounceEdge::whenActive(bool inputData)
+{
+  if (inputData != lastInputDataState)
+  {
+    lastDebounceTime = millis();
+  }
+
+  if ((millis() - lastDebounceTime) > debounceDuration)
+  {
+
+    if (inputData)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+  lastInputDataState = inputData;
+}
+
+bool XibDebounceEdge::whenDeactive(bool inputData)
+{
+  if (inputData != lastInputDataState)
+  {
+    lastDebounceTime = millis();
+  }
+
+  if ((millis() - lastDebounceTime) > debounceDuration)
+  {
+
+    if (!inputData)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
     }
   }
   lastInputDataState = inputData;

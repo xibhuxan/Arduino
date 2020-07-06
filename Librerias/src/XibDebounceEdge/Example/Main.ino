@@ -5,7 +5,7 @@ const int ledPin = 13;
 const int ledPin2 = 12; 
 const int ledPin3 = 11; 
 
-//Increase the "20" (milliseconds) if you still get false readings from the button
+//Increase the "20" (milliseconds) if you still get false readings from the button, or 0 if you dont need debounce
 XibDebounce myDebounce1(20);
 XibDebounce myDebounce2(20);
 XibDebounce myDebounce3(20);
@@ -26,6 +26,7 @@ void loop()
 {
 
   bool reading = !digitalRead(buttonPin); //Read from the pin that have the button
+//You can use this set of functions
 
 //while the input it's on, the function "whenActive" do the personal function
   myDebounce1.whenActive(reading, []() {
@@ -46,5 +47,26 @@ void loop()
   myDebounce4.whenFallingEdge(reading, []() {
     digitalWrite(ledPin3, led3State = !led3State);
   });
+  
+  //or this set functions, they are the same, but in one set you can put code inside the parameter, and in the other set, you receive a bool (delete comments symbols)
+
+  /*
+  if (myDebounce1.whenActive(reading))
+  {
+    digitalWrite(ledPin, 1);
+  }
+  if (myDebounce2.whenDeactive(reading))
+  {
+    digitalWrite(ledPin, 0);
+  }
+  if (myDebounce3.whenRisingEdge(reading))
+  {
+    digitalWrite(ledPin2, led2State = !led2State);
+  }
+  if (myDebounce4.whenFallingEdge(reading))
+  {
+    digitalWrite(ledPin3, led3State = !led3State);
+  }
+  */
   
 }
