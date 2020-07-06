@@ -1,6 +1,6 @@
 #include <XibTempo.h>
 
-XibTempo::XibTempo(long duration)
+XibTempo::XibTempo(uint32_t duration)
 {
     millisDuration = duration;
     enabled = true;
@@ -20,12 +20,29 @@ void XibTempo::disable()
 }
 void XibTempo::execTimedFunction(void (*f)())
 {
-    if(enabled && (millis() - millisStart >= millisDuration)){
+    if (enabled && (millis() - millisStart >= millisDuration))
+    {
         millisStart = millis();
         f();
     }
 }
-long XibTempo::timeRemaining()
+bool XibTempo::getTempo()
+{
+    if (enabled && (millis() - millisStart >= millisDuration))
+    {
+        millisStart = millis();
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+void XibTempo::setTime(uint32_t duration)
+{
+    millisDuration = duration;
+}
+uint32_t XibTempo::timeRemaining()
 {
     return (millisStart + millisDuration) - millis();
 }
