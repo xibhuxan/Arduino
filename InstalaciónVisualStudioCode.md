@@ -12,7 +12,7 @@ Una vez descargado se verá un archivo comprimido tar.xz, por lo tanto hay que d
 Ahora se copia la carpeta a /opt/ por ejemplo, es una carpeta en la que se pueden colocar programas.  
 `sudo cp -R /arduino-1.8.10/ /opt/`  
 Se le dan los permisos de usuario.  
-`sudo chown $USER:$USER /opt/arduino-1.8.10/`
+`sudo chown -R $USER:$USER /opt/arduino-1.8.10/`
 
 Se instala VSCode desde sitios oficiales como su página oficial. https://code.visualstudio.com/ y seguir los pasos para la distribución. O bien desde repositorios de la distribución si estuviera el paquete.
 
