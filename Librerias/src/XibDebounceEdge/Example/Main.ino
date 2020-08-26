@@ -6,10 +6,10 @@ const int ledPin2 = 12;
 const int ledPin3 = 11; 
 
 //Increase the "20" (milliseconds) if you still get false readings from the button, or 0 if you dont need debounce
-XibDebounce myDebounce1(20);
-XibDebounce myDebounce2(20);
-XibDebounce myDebounce3(20);
-XibDebounce myDebounce4(20);
+XibDebounceEdge myDebounce1(20);
+XibDebounceEdge myDebounce2(20);
+XibDebounceEdge myDebounce3(20);
+XibDebounceEdge myDebounce4(20);
 
 bool led2State;
 bool led3State;
