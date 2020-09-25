@@ -1,14 +1,26 @@
 
 # Arduino
-Los códigos están pendientes de revisión, reestructuración, y edición. Progresivamente se irá mejorando. Se modificarán tanto archivos como estructuras sin aviso previo.
+Los códigos progresivamente se irán mejorando. Se modificarán tanto archivos como estructuras sin aviso previo. :es: Todo en Español :es:
 
-Puedes ayudar mediante una donación. [![paypal](https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZM8VWFAP5UUY&source=url)
+Puedes unirte a los grupos de `Telegram` donde hay personas como yo que pueden ayudarte de forma más concreta y fluida con dudas. Además de colaborar y publicar a la gente tus proyectos.
 
-Aquí se colocarán distintos proyectos basados en arduino UNO y sus sensores. Para el resto de modelos de arduinos es posible que sea necesario hacer modificaciones al código en base a los pines usados, librerías, o cualquier otra diferencia que tengan con el modelo UNO.
+- https://t.me/esp32es
+- https://t.me/arduinoGP
+- https://t.me/arduchino
+
+Otros grupos útiles de autómatas programables PLC y energías renovables.
+
+- https://t.me/plcyautomatas
+- https://t.me/energias_renovables
+
+
+Puedes ayudar a este repositorio mediante una donación. [![paypal](https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZM8VWFAP5UUY&source=url)
+
+Aquí se colocarán distintos proyectos basados en arduino UNO y sus sensores/actuadores. Para el resto de modelos de arduinos es posible que sea necesario hacer modificaciones al código en base a los pines usados, librerías, o cualquier otra diferencia que tengan con el modelo UNO.
 
 El repositorio está ordenado de la siguiente manera:
 
-La carpeta de ["RecursosProgramacion"](RecursosProgramacion) con información útil en forma de PDF(se recomienda encarecidamente su lectura) con tutoriales, ejercicios básicos e imágenes del arduino. Estos PDF pertenecen a sus respectivos autores.
+La carpeta de ["RecursosProgramacion"](RecursosProgramacion) con información útil en forma de PDF(se recomienda encarecidamente su lectura) con tutoriales, ejercicios básicos e imágenes del arduino. Estos recursos pertenecen a sus respectivos autores.
 
 La carpeta de ["EjemplosBasicosDeUso"](EjemplosBasicosDeUso) contiene carpetas con información de uso básico de los sensores y actuadores, en cada uno varios elementos. Su archivo fritzing del componente si fuera necesario, archivo de conexionado, imagen de conexionado, y un código básico de uso.
 
@@ -30,6 +42,6 @@ Para reportar fallos utilizad el sistema de ["Issues"](https://github.com/Xibhu/
 
 Los códigos sacados de terceras personas, mantendrán los créditos en distintas partes del repositorio, sus enlaces a web pueden estar en el archivo `EnlacesInterés.md` como en el código, etc.
 
-En mi caso utilizo el editor de texto Visual Studio Code en linux/debian con el plugin o extensión de Arduino hecho por microsoft.
+En mi caso utilizo el editor de texto Visual Studio Code en linux con el plugin o extensión de `PlatformIO`. El tutorial de instalación y uso es el siguiente enlace: https://randomnerdtutorials.com/vs-code-platformio-ide-esp32-esp8266-arduino/
 
-Para utilizar VSCode en linux es necesario seguir unos pasos descritos en ["InstalaciónVisualStudioCode.md"](InstalaciónVisualStudioCode.md).
+Para utilizar VSCode con el plugin de Arduino en linux es necesario seguir unos pasos descritos en ["InstalaciónVisualStudioCode.md"](InstalaciónVisualStudioCode.md).
