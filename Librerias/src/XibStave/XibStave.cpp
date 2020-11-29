@@ -45,14 +45,8 @@ void XibStave::addStave ( uint8_t *stave, uint16_t staveTotalPitches,
 
   totalPitches[ indexTotalSpeakers ] = staveTotalPitches;
 
-  //Not necessary
-  /*
-  if (staveTotalPitches > totalPitches[indexLargestStave]) {
-    indexLargestStave = indexTotalSpeakers;
-  }
-  */
-
   tones[ indexTotalSpeakers ].begin( pinSpeaker );
+
   pinMode( pinSpeaker, OUTPUT );
 
   indexTotalSpeakers++;
