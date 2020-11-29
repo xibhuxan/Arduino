@@ -52,21 +52,24 @@ void XibStave::begin() {
 
 }
 
-void XibStave::run() {
-
-  if (playing) {
-
-    for (uint8_t i = 0; i < TOTAL_SPEAKERS; i++) {
-
-      if (!staveFinished(i)) {
-
+void XibStave::run()
+{
+  if (playing)
+  {
+    for (uint8_t i = 0; i < TOTAL_SPEAKERS; i++)
+    {
+      if (!staveFinished(i))
+      {
         /**
          * Play the note, unless its a SILENCE (END)
          */
         uint16_t pitchFrec = getCurrentPitchFromStave(i);
-        if (pitchFrec != pitchesFrec[END]) {
+        if (pitchFrec != pitchesFrec[END])
+        {
           tones[i].play(pitchFrec);
-        } else {
+        }
+        else
+        {
           tones[i].stop();
         }
 
@@ -83,14 +86,12 @@ void XibStave::run() {
          * Calculate the time tone.play is running, when it 
          */
         currentTime[i] = millis();
-        if (currentTime[i] - prevTime[i] >= getCurrentDurationFromStave(i)) {
+        if (currentTime[i] - prevTime[i] >= getCurrentDurationFromStave(i))
+        {
           prevTime[i] = currentTime[i];
           tones[i].stop();
           currentPitch[i]++;
         }
-        
-
-
       }
     }
     repeatSong();
