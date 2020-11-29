@@ -1,32 +1,46 @@
 #include <XibStave.h>
 
-XibStave::XibStave() {}
+XibStave::XibStave()
+{
+}
 
-XibStave::~XibStave() {}
+XibStave::~XibStave()
+{
+}
 
-void XibStave::play() { playing = true; }
+void XibStave::play()
+{
+  playing = true;
+}
 
-void XibStave::pause() {
+void XibStave::pause()
+{
   playing = false;
 
-  for (uint8_t i = 0; i < TOTAL_SPEAKERS; i++) {
+  for (uint8_t i = 0; i < TOTAL_SPEAKERS; i++)
+  {
     tones[i].stop();
   }
 }
 
-void XibStave::stop() {
+void XibStave::stop()
+{
   pause();
-  for (uint8_t i = 0; i < TOTAL_SPEAKERS; i++) {
+  for (uint8_t i = 0; i < TOTAL_SPEAKERS; i++)
+  {
     currentPitch[i] = 0;
   }
   firstPitch = true;
 }
 
-void XibStave::loop(bool activateLoop) { inLoop = activateLoop; }
+void XibStave::loop(bool activateLoop)
+{
+  inLoop = activateLoop;
+}
 
 void XibStave::addStave(uint8_t *stave, uint16_t staveTotalPitches,
-                        uint8_t pinSpeaker) {
-
+                        uint8_t pinSpeaker)
+{
   staves[indexTotalSpeakers] = stave;
 
   totalPitches[indexTotalSpeakers] = staveTotalPitches;
@@ -44,12 +58,12 @@ void XibStave::addStave(uint8_t *stave, uint16_t staveTotalPitches,
   indexTotalSpeakers++;
 }
 
-void XibStave::begin() {
-
-  for (uint8_t i = 0; i < 8; i++) {
+void XibStave::begin()
+{
+  for (uint8_t i = 0; i < 8; i++)
+  {
     durations[i] = durationsForCalc[i];
   }
-
 }
 
 void XibStave::run()
@@ -98,24 +112,34 @@ void XibStave::run()
   }
 }
 
-void XibStave::setBPM(uint8_t newBPM) { musicBPM = newBPM; }
+void XibStave::setBPM(uint8_t newBPM)
+{
+  musicBPM = newBPM;
+}
 
-bool XibStave::staveFinished(uint8_t indexStave) {
+bool XibStave::staveFinished(uint8_t indexStave)
+{
   return currentPitch[indexStave] >= totalPitches[indexStave];
 }
 
-uint16_t XibStave::getCurrentPitchFromStave(uint8_t stave) {
+uint16_t XibStave::getCurrentPitchFromStave(uint8_t stave)
+{
   return pitchesFrec[*(staves[stave] + (currentPitch[stave] * 2))];
 }
 
-uint16_t XibStave::getCurrentDurationFromStave(uint8_t stave) {
+uint16_t XibStave::getCurrentDurationFromStave(uint8_t stave)
+{
   return durations[*(staves[stave] + (currentPitch[stave] * 2) + 1)];
 }
 
-void XibStave::repeatSong() {
-  if (inLoop) {
-    for (uint8_t i = 0; i < TOTAL_SPEAKERS; i++) {
-      if (!staveFinished(i)) {
+void XibStave::repeatSong()
+{
+  if (inLoop)
+  {
+    for (uint8_t i = 0; i < TOTAL_SPEAKERS; i++)
+    {
+      if (!staveFinished(i))
+      {
         return;
       }
     }
