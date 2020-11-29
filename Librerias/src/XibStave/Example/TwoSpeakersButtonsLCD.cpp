@@ -1,6 +1,8 @@
 #include <Arduino.h>
 #include <XibStave.h>
 
+//Video demonstration https://youtu.be/ecUfr1Za3Rk
+
 /**
  * Optional use with buttons. And LCD.
  *

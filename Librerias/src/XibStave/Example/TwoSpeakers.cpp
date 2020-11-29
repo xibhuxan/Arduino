@@ -1,6 +1,8 @@
 #include <Arduino.h>
 #include <XibStave.h>
 
+//Video demonstration https://youtu.be/ecUfr1Za3Rk
+
 //Speaker pins
 const uint8_t speaker1 = 8;
 const uint8_t speaker2 = 9;
