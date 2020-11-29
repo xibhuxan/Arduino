@@ -8,12 +8,12 @@ XibStave::~XibStave()
 {
 }
 
-void XibStave::play()
+void XibStave::play ()
 {
   playing = true;
 }
 
-void XibStave::pause()
+void XibStave::pause ()
 {
   playing = false;
 
@@ -23,7 +23,7 @@ void XibStave::pause()
   }
 }
 
-void XibStave::stop()
+void XibStave::stop ()
 {
   pause();
   for (uint8_t i = 0; i < TOTAL_SPEAKERS; i++)
@@ -33,13 +33,13 @@ void XibStave::stop()
   firstPitch = true;
 }
 
-void XibStave::loop(bool activateLoop)
+void XibStave::loop ( bool activateLoop )
 {
   inLoop = activateLoop;
 }
 
-void XibStave::addStave(uint8_t *stave, uint16_t staveTotalPitches,
-                        uint8_t pinSpeaker)
+void XibStave::addStave ( uint8_t *stave, uint16_t staveTotalPitches,
+                          uint8_t pinSpeaker )
 {
   staves[indexTotalSpeakers] = stave;
 
@@ -58,7 +58,7 @@ void XibStave::addStave(uint8_t *stave, uint16_t staveTotalPitches,
   indexTotalSpeakers++;
 }
 
-void XibStave::begin()
+void XibStave::begin ()
 {
   for (uint8_t i = 0; i < 8; i++)
   {
@@ -66,7 +66,7 @@ void XibStave::begin()
   }
 }
 
-void XibStave::run()
+void XibStave::run ()
 {
   if (playing)
   {
@@ -112,27 +112,27 @@ void XibStave::run()
   }
 }
 
-void XibStave::setBPM(uint8_t newBPM)
+void XibStave::setBPM ( uint8_t newBPM )
 {
   musicBPM = newBPM;
 }
 
-bool XibStave::staveFinished(uint8_t indexStave)
+bool XibStave::staveFinished ( uint8_t indexStave )
 {
   return currentPitch[indexStave] >= totalPitches[indexStave];
 }
 
-uint16_t XibStave::getCurrentPitchFromStave(uint8_t stave)
+uint16_t XibStave::getCurrentPitchFromStave ( uint8_t stave )
 {
   return pitchesFrec[*(staves[stave] + (currentPitch[stave] * 2))];
 }
 
-uint16_t XibStave::getCurrentDurationFromStave(uint8_t stave)
+uint16_t XibStave::getCurrentDurationFromStave ( uint8_t stave )
 {
   return durations[*(staves[stave] + (currentPitch[stave] * 2) + 1)];
 }
 
-void XibStave::repeatSong()
+void XibStave::repeatSong ()
 {
   if (inLoop)
   {
