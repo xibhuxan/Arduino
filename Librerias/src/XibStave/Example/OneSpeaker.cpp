@@ -8,8 +8,8 @@ const uint8_t speaker1 = 8;
 
 // BUZZER 1
 uint8_t pentagrama1[][2] = {
-    {NC1, N}, {NF3, N},  {END, N}, {END, N}, {NC1, N},  {NF3, N}, {NAS3, N}, {NDS4, N},
-    {NGS4, N}};
+    {NC1, NN}, {NF3, NN},  {END, NN}, {END, NN}, {NC1, NN},  {NF3, NN}, {NAS3, NN}, {NDS4, NN},
+    {NGS4, NN}};
 
 
 

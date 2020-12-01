@@ -21,13 +21,13 @@ const uint8_t speaker1 = 8;
 const uint8_t speaker2 = 9;
 
 // BUZZER 1
-uint8_t pentagrama1[][2] = {{NG1, B}, {NDS4, B},  {NDS4, B},
-                            {NDS4, B}, {NG1, B},  {NF3, N},
-                            {NAS3, N}, {NDS4, N}, {NG1, N}};
+uint8_t pentagrama1[][2] = {{NG1, NB}, {NDS4, NB},  {NDS4, NB},
+                            {NDS4, NB}, {NG1, NB},  {NF3, NN},
+                            {NAS3, NN}, {NDS4, NN}, {NG1, NN}};
 
 // BUZZER 2
-uint8_t pentagrama2[][2] = {{NC1, N}, {END, N},  {END, N},  {END, N}, {NC3, N},
-                            {NF3, N}, {NAS3, N}, {NDS4, N}, {NGS4, N}};
+uint8_t pentagrama2[][2] = {{NC1, NN}, {END, NN},  {END, NN},  {END, NN}, {NC3, NN},
+                            {NF3, NN}, {NAS3, NN}, {NDS4, NN}, {NGS4, NN}};
 
 const uint8_t playButton = 2;
 const uint8_t pauseButton = 3;
