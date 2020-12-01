@@ -28,6 +28,12 @@
        you use. */
 #define TOTAL_SPEAKERS 1
 
+
+/**
+ * Do NOT change this number, unless you have changed the duration arrays for personal purposes.
+ */
+#define TOTAL_DURATIONS 14
+
 class XibStave {
 public:
   XibStave();
@@ -133,26 +139,35 @@ private:
       1976, 2093, 2217, 2349, 2489, 2637, 2794, 2960, 3136, 3322, 3520, 3729,
       3951, 4186, 4435, 4699, 4978, 1};
 
+
+  
+
   const uint16_t minute = 60000;
   uint8_t musicBPM = 60;
 
   uint16_t crotchetBaseTime = minute / musicBPM;
 
   /**
-   * @see "Durations.h" to see US and UK names
+   * @see "Durations.h" to see US and UK names, also for add new durations
    */
-  uint16_t durationsForCalc[8] = {
-      crotchetBaseTime,           // NEGRA
-      crotchetBaseTime * 15 / 10, // NEGRA Y MEDIA
-      crotchetBaseTime * 4,       // REDONDA
-      crotchetBaseTime * 2,       // BLANCA
-      crotchetBaseTime / 2,       // CORCHEA
-      crotchetBaseTime / 3,       // TRESILLO
-      crotchetBaseTime / 4,       // SEMICORCHEA
-      crotchetBaseTime / 8        // FUSA
+  uint16_t durationsForCalc[TOTAL_DURATIONS] = {
+      crotchetBaseTime,                 // NEGRA
+      crotchetBaseTime * 15 / 10,       // NEGRA CON PUNTILLO
+      crotchetBaseTime * 4,             // REDONDA
+      crotchetBaseTime * 4 * 15 / 10,   // REDONDA CON PUNTILLO
+      crotchetBaseTime * 2,             // BLANCA
+      crotchetBaseTime * 2 * 15 / 10,   // BLANCA CON PUNTILLO
+      crotchetBaseTime / 2,             // CORCHEA
+      crotchetBaseTime / 2 * 15 / 10,   // CORCHEA CON PUNTILLO
+      crotchetBaseTime / 3,             // TRESILLO
+      crotchetBaseTime / 3 * 15 / 10,   // TRESILLO CON PUNTILLO
+      crotchetBaseTime / 4,             // SEMICORCHEA
+      crotchetBaseTime / 4 * 15 / 10,   // SEMICORCHEA CON PUNTILLO
+      crotchetBaseTime / 8,             // FUSA
+      crotchetBaseTime / 8 * 15 / 10    // FUSA CON PUNTILLO
   };
 
-  uint16_t durations[8];
+  uint16_t durations[TOTAL_DURATIONS];
 };
 
 #endif
