@@ -6,7 +6,7 @@
  * @note Telegram spanish group - 8-bit Melody Maker 2B
  * @note Video demonstration https://youtu.be/ecUfr1Za3Rk
  * @version 0.2
- * @date 11-2020
+ * @date 1-12-2020
  * @copyright GNU General Public License v3.0
  * @note This library allows you to use many staves independently, one stave per
  * speaker. To create a stave, use the variables on "Durations.h" and
