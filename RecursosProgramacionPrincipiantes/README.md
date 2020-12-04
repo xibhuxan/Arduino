@@ -15,11 +15,13 @@ https://desensores.com/
 
 Explicaciones en inglés:  
 https://randomnerdtutorials.com/  
-Manejo de la memoria, interesante: https://esp8266life.wordpress.com/2019/01/13/memory-memory-always-memory/amp/  
-https://lastminuteengineers.com/  
-https://savjee.be/2019/12/esp32-tips-to-increase-battery-life/  
+https://lastminuteengineers.com/
+
+Optimizaciones:  
+https://esp8266life.wordpress.com/2019/01/13/memory-memory-always-memory/amp/  
 https://medium.com/the-esp-journal/esp32-programmers-memory-model-259444d89387  
-https://www.esp8266.com/viewtopic.php?p=69937
+https://www.esp8266.com/viewtopic.php?p=69937  
+https://savjee.be/2019/12/esp32-tips-to-increase-battery-life/
 
 Crear caracteres personalizados en pantalla LCD:  
 https://maxpromer.github.io/LCD-Character-Creator/
