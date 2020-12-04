@@ -68,18 +68,6 @@ void XibStave::run ()
     {
       if ( !staveFinished( i ) )
       {
-        /**
-         * Play the note, unless its a SILENCE (END)
-         */
-        uint16_t pitchFrec = getCurrentPitchFromStave( i );
-        if ( pitchFrec != pitchesFrec[ END ] )
-        {
-          tones[ i ].play( pitchFrec );
-        }
-        else
-        {
-          tones[ i ].stop();
-        }
 
         /**
          * When the first pitch is reproduced, prevtime[x] has a value 0, so the duration it's wrong
@@ -89,11 +77,40 @@ void XibStave::run ()
           prevTime[ i ] = millis();
           firstPitch = false;
         }
+        currentTime[ i ] = millis();
+
+
+
+        /**
+         * |============NoiseDuration========|==SilenceDuration==|
+         * |====================PitchDuration====================|
+         */
+        if ( currentTime[ i ] - prevTime[ i ] >= getCurrentDurationFromStave( i ) - silenceDuration )
+        {
+          tones[ i ].stop();
+        }
+        else
+        {
+          /**
+            * Play the note, unless its a SILENCE (END)
+            */
+          uint16_t pitchFrec = getCurrentPitchFromStave( i );
+          if ( pitchFrec != pitchesFrec[ END ] )
+          {
+            tones[ i ].play( pitchFrec );
+          }
+          else
+          {
+            tones[ i ].stop();
+          }
+        }
+        
+        
         
         /**
-         * Calculate the time tone.play is running, when it 
+         * Start new pitch when duration finish
          */
-        currentTime[ i ] = millis();
+        
         if ( currentTime[ i ] - prevTime[ i ] >= getCurrentDurationFromStave( i ) )
         {
           prevTime[ i ] = currentTime[ i ];
@@ -109,6 +126,11 @@ void XibStave::run ()
 void XibStave::setBPM ( uint8_t newBPM )
 {
   musicBPM = newBPM;
+}
+
+void XibStave::setSilenceDuration ( uint16_t newSilenceDuration )
+{
+  silenceDuration = newSilenceDuration;
 }
 
 bool XibStave::staveFinished ( uint8_t indexStave )

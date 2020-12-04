@@ -84,6 +84,11 @@ public:
    */
   void setBPM(uint8_t newBPM);
 
+  /**
+   * @brief Optional to set other duration between pitches. Default:40.
+   * @param newSilenceDuration Is the new duration you want
+   */
+  void setSilenceDuration(uint16_t newSilenceDuration);
 
 
 private:
@@ -144,6 +149,7 @@ private:
 
   const uint16_t minute = 60000;
   uint8_t musicBPM = 60;
+  uint16_t silenceDuration = 40;
 
   uint16_t crotchetBaseTime = minute / musicBPM;
 
