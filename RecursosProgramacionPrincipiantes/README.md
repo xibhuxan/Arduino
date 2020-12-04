@@ -1,41 +1,41 @@
 Este apartado contiene todo lo relacionado con recursos para principiantes. Están los PDF con explicaciones, imágenes, además de múltiples enlaces a más tutoriales
 
-Página oficial arduino: https://www.arduino.cc/
+Página oficial arduino: https://www.arduino.cc/  
 Realizar interfaces gráficas: https://lvgl.io/
 
-Páginas web con tutoriales y explicaciones en español:
-https://www.luisllamas.es/
-https://programarfacil.com/categoria/blog/
-https://www.prometec.net/indice-tutoriales/
-https://descubrearduino.com/
+Páginas web con tutoriales y explicaciones en español:  
+https://www.luisllamas.es/  
+https://programarfacil.com/categoria/blog/  
+https://www.prometec.net/indice-tutoriales/  
+https://descubrearduino.com/  
 https://eloctavobit.com/
 
-Explicación de sensores:
+Explicación de sensores:  
 https://desensores.com/
 
-Explicaciones en inglés:
-https://randomnerdtutorials.com/
-Manejo de la memoria, interesante: https://esp8266life.wordpress.com/2019/01/13/memory-memory-always-memory/amp/
-https://lastminuteengineers.com/
-https://savjee.be/2019/12/esp32-tips-to-increase-battery-life/
-https://medium.com/the-esp-journal/esp32-programmers-memory-model-259444d89387
+Explicaciones en inglés:  
+https://randomnerdtutorials.com/  
+Manejo de la memoria, interesante: https://esp8266life.wordpress.com/2019/01/13/memory-memory-always-memory/amp/  
+https://lastminuteengineers.com/  
+https://savjee.be/2019/12/esp32-tips-to-increase-battery-life/  
+https://medium.com/the-esp-journal/esp32-programmers-memory-model-259444d89387  
 https://www.esp8266.com/viewtopic.php?p=69937
 
-Crear caracteres personalizados en pantalla LCD:
+Crear caracteres personalizados en pantalla LCD:  
 https://maxpromer.github.io/LCD-Character-Creator/
 
-Página web donde obtener componentes de fritzing:
+Página web donde obtener componentes de fritzing:  
 https://arduinomodules.info/
 
-Curso de arduino:
+Curso de arduino:  
 https://www.youtube.com/watch?v=eBVvD85Ml2c&list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1vyn2&index=1
 
-Curso de electrónica básica:
+Curso de electrónica básica:  
 https://www.youtube.com/playlist?list=PLNipMBg3MF-by_2uhpnmGbGTBPMfqo7HV
 
-Desarrollo de librerías:
-http://www.lunegate.net/2015/10/tutorial-aprender-usar-librerias-en.html
-https://www.geekfactory.mx/tutoriales/tutoriales-arduino/como-instalar-una-libreria-de-arduino/
+Desarrollo de librerías:  
+http://www.lunegate.net/2015/10/tutorial-aprender-usar-librerias-en.html  
+https://www.geekfactory.mx/tutoriales/tutoriales-arduino/como-instalar-una-libreria-de-arduino/  
 https://arduino.github.io/arduino-cli/latest/library-specification/
 
 Enlaces de interés:
