@@ -75,3 +75,5 @@ Placa con pulsadores, displays y leds: https://blog.3d-logic.com/2015/01/10/usin
 Módulo MP3: https://www.dfrobot.com/wiki/index.php/DFPlayer_Mini_SKU:DFR0299
 
 Utilizar pulsadores sin resistencia: https://www.baldengineer.com/arduino-internal-pull-up-resistor-tutorial.html
+
+Todos los enlaces, PDF, imágenes, y cualquier tipo de recurso, pertenecen a sus respectivos autores.
