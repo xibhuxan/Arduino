@@ -18,18 +18,18 @@ void loop()
     lecturaBoton = !digitalRead(botonPin);
 
     //Esta es una manera de ejecutar la funcion
-
+/*
 	miDetector.whenRisingEdge(lecturaBoton, [](){
         contador++;
         Serial.println(contador);
     });
-
+*/
 
     //Esta es otra manera
-    /*
+    
     if(miDetector.whenRisingEdge(lecturaBoton)){
         contador++;
         Serial.println(contador);
     }
-    */
+    
 }
