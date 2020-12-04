@@ -49,6 +49,7 @@ void setup() {
   //myStave.addStave(*pentagrama2, sizeof(pentagrama2) / 2, speaker2);
   // myStave.play();
   // myStave.setBPM(120);
+  //myStave.setSilenceDuration(50);
 
   pinMode(playButton, INPUT_PULLUP);
   pinMode(pauseButton, INPUT_PULLUP);

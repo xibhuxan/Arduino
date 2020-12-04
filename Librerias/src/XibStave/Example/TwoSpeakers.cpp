@@ -25,6 +25,7 @@ void setup() {
   myStave.addStave(*pentagrama1, sizeof(pentagrama1)/2, speaker1);
   myStave.addStave(*pentagrama2, sizeof(pentagrama2)/2, speaker2);
   myStave.play();
+  //myStave.setSilenceDuration(50);
 
 }
 
