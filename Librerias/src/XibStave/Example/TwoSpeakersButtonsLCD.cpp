@@ -70,21 +70,18 @@ void loop() {
 
   myPlayButton.whenRisingEdge(!digitalRead(playButton), []() {
     myStave.play();
-    Serial.println("entre play");
     lcd.setCursor(0, 0);
     lcd.print("PLAYING");
   });
 
   myPauseButton.whenRisingEdge(!digitalRead(pauseButton), []() {
     myStave.pause();
-    Serial.println("entre pause");
     lcd.setCursor(0, 0);
     lcd.print("PAUSED ");
   });
 
   myStopButton.whenRisingEdge(!digitalRead(stopButton), []() {
     myStave.stop();
-    Serial.println("entre stop");
     lcd.setCursor(0, 0);
     lcd.print("PAUSED ");
   });
@@ -92,7 +89,6 @@ void loop() {
   myLoopButton.whenRisingEdge(!digitalRead(loopButton), []() {
     loopState = !loopState;
     myStave.loop(loopState);
-    Serial.println("entre loop");
     if (loopState) {
       lcd.setCursor(0, 1);
       lcd.print("LOOP ON ");
