@@ -35,6 +35,15 @@ https://www.youtube.com/watch?v=eBVvD85Ml2c&list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1v
 Curso de electrónica básica:  
 https://www.youtube.com/playlist?list=PLNipMBg3MF-by_2uhpnmGbGTBPMfqo7HV
 
+Curso de git inglés PDF:  
+https://git-scm.com/doc
+
+Curso de git español PDF:
+https://git-scm.com/book/es/v2
+
+Esquema básico git:  
+https://rogerdudler.github.io/git-guide/index.es.html
+
 Desarrollo de librerías:  
 http://www.lunegate.net/2015/10/tutorial-aprender-usar-librerias-en.html  
 https://www.geekfactory.mx/tutoriales/tutoriales-arduino/como-instalar-una-libreria-de-arduino/  
