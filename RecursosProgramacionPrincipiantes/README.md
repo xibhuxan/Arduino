@@ -36,7 +36,7 @@ Curso de electrónica básica:
 https://www.youtube.com/playlist?list=PLNipMBg3MF-by_2uhpnmGbGTBPMfqo7HV
 
 Curso de git inglés PDF:  
-https://git-scm.com/doc
+https://git-scm.com/book/en/v2
 
 Curso de git español PDF:  
 https://git-scm.com/book/es/v2
