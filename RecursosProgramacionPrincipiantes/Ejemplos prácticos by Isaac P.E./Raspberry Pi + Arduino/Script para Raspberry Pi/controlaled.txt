@@ -1,0 +1,19 @@
+import serial
+
+arduino = serial.Serial('/dev/ttyACM0', 9600)
+
+print("¡Iniciando!")
+
+while True:
+    comando = raw_input('Introduce un comando para el control de LEDs: ') #Muestra este mensaje y espera
+    arduino.write(comando) #Ahora puedes introducir el comando V, A o R para el control y pulsar INTRO 
+    if comando == 'V':
+        print('LED VERDE ENCENDIDO')
+    elif comando == 'A':
+        print('LED AMARILLO ENCENDIDO')
+    elif comando == 'R':
+	print('LED ROJO ENCENDIDO')
+    else:
+	unknown()
+
+arduino.close() #Finalizamos la comunicacion

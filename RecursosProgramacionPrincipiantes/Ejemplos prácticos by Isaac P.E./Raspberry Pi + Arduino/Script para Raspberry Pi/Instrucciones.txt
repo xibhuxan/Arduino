@@ -1,0 +1,9 @@
+El script o programa en Python se llama "controlaled". Para que funcione adecuadamente, debes cambiarle la extensión .txt por .py
+
+Luego desde la consola, te situas en el directorio donde se encuentre controlaled.py y lo ejecutas escribiendo: 
+
+	python controlaled.py 
+
+
+¡Y listo, en la nueva ventana podrás introducir la letra V, A o R para controlar mediante estos comandos las luces! 
+Si lo deseas, puedes agregarle otro comando que las apague. Imagina y crea...

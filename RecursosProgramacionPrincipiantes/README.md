@@ -14,6 +14,9 @@ https://www.arduino.cc/
 Curso de arduino:  
 https://www.youtube.com/watch?v=eBVvD85Ml2c&list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1vyn2&index=1
 
+Curso Arduino by Isaac P.E.:  
+Los dos PDF (Arduino Mobile/PC edition) y carpeta con su nombre con los ejemplos prácticos.
+
 Curso de electrónica básica:  
 https://www.youtube.com/playlist?list=PLNipMBg3MF-by_2uhpnmGbGTBPMfqo7HV
 
