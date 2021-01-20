@@ -16,7 +16,7 @@ Otros grupos útiles de autómatas programables PLC y energías renovables.
 
 Puedes ayudar a este repositorio mediante una donación. [![paypal](https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZM8VWFAP5UUY&source=url)
 
-Aquí se colocarán distintos proyectos basados en arduino UNO y sus sensores/actuadores. Para el resto de modelos de arduinos es posible que sea necesario hacer modificaciones al código en base a los pines usados, librerías, o cualquier otra diferencia que tengan con el modelo UNO.
+Aquí se colocarán distintos proyectos basados generalmente en arduino UNO y sus sensores/actuadores. Para el resto de modelos de microcontroladores es posible que sea necesario hacer modificaciones al código en base a los pines usados, librerías, o cualquier otra diferencia que tengan con el modelo UNO.
 
 El repositorio está ordenado de la siguiente manera:
 
@@ -47,4 +47,3 @@ Como utilidad añadida, se puede colocar en cada proyecto creado con `PlatforIO`
 Para utilizar VSCode con el plugin de Arduino en linux es necesario seguir unos pasos descritos en ["InstalaciónVisualStudioCode.md"](InstalaciónVisualStudioCode.md).
 
 Twitter: [@xibhuxan](https://twitter.com/xibhuxan)
-Youtube: [Xibhu](https://www.youtube.com/channel/UCAhhDK1L_zwQJLW7rujOJGA)
