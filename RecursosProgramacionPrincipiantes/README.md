@@ -4,7 +4,9 @@ Este apartado contiene todo lo relacionado con recursos para principiantes. Est�
 
 El inicio del repositorio con las explicaciones del repositorio entero es: https://github.com/Xibhu/Arduino 
 
-# Cursos Arduino
+# Cursos Arduino / Programación / Electrónica
+
+Múltiples PDF de explicaciones en inglés y español en esta misma carpeta. Además de otros PDF de ejercicios para arduino. Importante el PDF [37-SENSOR-KIT-TUTORIAL](37-SENSOR-KIT-TUTORIAL.pdf) en el cual se explican muchos sensores uno a uno.
 
 Página oficial arduino:  
 https://www.arduino.cc/
@@ -17,6 +19,9 @@ https://www.youtube.com/playlist?list=PLNipMBg3MF-by_2uhpnmGbGTBPMfqo7HV
 
 Cursos de diversos lenguajes de programación:  
 https://www.youtube.com/c/Programaci%C3%B3nATS/playlists
+
+Cálculo de resistencias y obtención de valores (y otras muchas más calculadoras):  
+https://www.digikey.com/es/resources/online-conversion-calculators
 
 # Cursos GIT
 
