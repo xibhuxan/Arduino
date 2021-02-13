@@ -1,0 +1,113 @@
+#include <iostream>
+
+using namespace std;
+
+void
+mel (uint8_t * entro, int tam)
+{
+
+  for (int i = 0; i < tam; i+=2)
+    {
+        for (int j = 0; j < 2; j++) {
+            std::cout << unsigned (entro[i+j]) << std::endl;
+        }
+    }
+}
+
+int
+main ()
+{
+
+  uint8_t misCosas[][2] = {
+    {3, 6}, {2, 3}, {8, 5}, {1, 4}, {0, 8}, {6, 4}
+  };
+  int tam = sizeof(misCosas);
+  uint8_t *cosasPtr = &misCosas[0][0];
+
+  mel (cosasPtr, tam);
+
+
+
+  //std::cout << unsigned(misCosas[0][0]) << std::endl;
+  std::cout << sizeof (misCosas) << std::endl;
+
+  return 0;
+
+}
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int miarr[] = {4,7,6,2};
+    int miotroarr[] = {9,4,6,3,2};
+    
+    int *ptr;
+    ptr = &miarr[0];
+    
+    std::cout << miarr[0] << std::endl;
+    std::cout << *(ptr+1) << std::endl; //ESTE ES EL IMPORTANTE
+    std::cout << ptr << std::endl;
+    
+    return 0;
+}
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int miarr[] = {4,7,6,2};
+    int miotroarr[] = {9,4,6,3,2};
+    
+    int *ptr;
+    ptr = &miarr[0];
+    
+    std::cout << miarr[1] << std::endl;
+    std::cout << *(ptr+1) << std::endl; //ESTE ES EL IMPORTANTE
+    std::cout << ptr << std::endl;
+    
+    
+    int miaor[][2] = {
+        {6,1},{8,5}
+    };
+    
+    int *punto = &miaor[0][0];
+    
+    std::cout << miaor[0][0] << std::endl;
+    std::cout << *(punto+3) << std::endl;//PERFE
+    
+    
+    return 0;
+}
+
+int main()
+{
+    int miarr[] = {4,7,6,2};
+    int miotroarr[] = {9,4,6,3,2};
+
+    int miaor[][2] = {
+        {6,1},{8,5}
+    };
+    int miaor2[][2] = {
+        {1,9},{3,6}
+    };
+    
+    
+    int *punto[2];
+    punto[0] = &miaor[0][0];
+    punto[1] = &miaor2[0][0];
+    
+    std::cout << *(punto[1]+2) << std::endl;
+    std::cout << *punto << std::endl;
+    
+    
+    //std::cout << *(punto+3) << std::endl;//PERFE
+    
+    
+    return 0;
+}

@@ -1,0 +1,174 @@
+/*
+A) El teclado debe utilizarse para ingresar un password.
+El password se debe mostrar en pantalla
+a medida que se va ingresando.
+Se debe mostrar en la línea superior de la pantalla.
+ B) El password correcto debe ser 'AB1234*#'
+ C) Si se ingresan 8 caracteres, automáticamente se debe validar si el
+ password ingresado es el correcto.
+ D) El botón etiquetado como "RESET" debe reiniciar los caracteres ingresados.
+ E) El botón etiquetado como "TEST PASSWORD" debe validar si el password ingresado es
+correcto o no, sin importar si se ingresaron los 8 caracteres.
+ F) Si el password es correcto debe mostrarse el mensaje "PASSWORD OK",
+ caso contrario se mostrará "PASSWORD FAIL"
+*/
+#include <LiquidCrystal.h>
+#include <Key.h>               //Viene con la librería de Keypad
+#include <Keypad.h>            //Descargada de la librería de arduino
+#define BOTON_RESET 1
+#define BOTON_TEST_PASSWORD 2
+#define NO_BOTON 3
+#define NO_BOTON '_'
+
+byte contador_password;
+String ingreso_password="";
+char boton_botonera=' ';
+bool bloqueo = false;
+char ultimoBoton = ' ';
+const byte ROWS = 4; //Cantidad de filas de la botonera
+const byte COLS = 4; //Cantidad de columnas de la botonera
+
+//Colocar los dígitos o símbolos que corresponden a cada tecla de la botonera
+char teclado[4][4]={
+  {'1','2','3','A'},
+  {'4','5','6','B'},
+  {'7','8','9','C'},
+  {'*','0','#','D'},
+};
+
+byte rowPins[ROWS] = {9, 8, 7, 6}; //Pines que utilizan las filas
+byte colPins[COLS] = {5, 4, 3, 2}; //Pines que utilizan las columnas
+
+//Creación del objeto que utiliza el teclado
+
+unsigned char teclaPisada = ' '; //Para guardar el valor leído del botón
+bool teclaFuePisada = false;     //Bloqueo al pisar un botón
+unsigned long teclaTiempo = 0;   //Para saber la diferencia de tiempo y actuar de una manera u otra
+
+
+LiquidCrystal lcd(12,13,A0,A1,A2,A3);
+String password = "AB1234*#";
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(A0, OUTPUT);
+  pinMode(A1, OUTPUT);
+  pinMode(A2, OUTPUT);
+  pinMode(A3, OUTPUT);
+ 
+  for(int i=0; i<4; i++){
+    pinMode(9-i, OUTPUT);
+    pinMode(5-i, INPUT_PULLUP);
+  }
+
+  lcd.begin(16,2);
+  lcd.setCursor(0,0);
+}
+
+void loop()
+{
+  leerBoton();
+  boton_botonera = leerTeclado();
+  if (boton_botonera != ultimoBoton && contador_password < 8 )
+    {
+
+        if (!bloqueo)
+        {
+            bloqueo = true;
+          if(boton_botonera != '_'){
+            lcd.setCursor(contador_password,0);
+            lcd.print(boton_botonera);
+            ingreso_password += boton_botonera;
+            contador_password++;
+           
+            if((contador_password)%8==0){
+             
+              if(ingreso_password==password){
+              lcd.setCursor(0,1);
+              lcd.print("PASSWORD OK");  
+              }else{
+              lcd.setCursor(0,1);
+              lcd.print("PASSWORD FAIL");
+              }
+              /*
+              delay(2000);
+              lcd.setCursor(0,0);
+              lcd.print("        ");//Sobre escribe el password
+              lcd.setCursor(0,1);
+              lcd.print("             ");//Sobre escribe el password
+              ingreso_password = "";
+             
+              */
+            }
+          }
+        }
+    }
+    else
+    {
+        bloqueo = false;
+    }
+ultimoBoton = boton_botonera;
+  switch (leerBoton())
+{
+case BOTON_RESET:
+    limpiarLinea(0);
+    limpiarLinea(1);
+    ingreso_password = "";
+    contador_password = 0;
+    break;
+
+case BOTON_TEST_PASSWORD:
+     if(ingreso_password==password){
+     lcd.setCursor(0,1);
+     lcd.print("PASSWORD OK");  
+     }else{
+     lcd.setCursor(0,1);
+     lcd.print("PASSWORD FAIL");
+       if(contador_password<8){
+       delay(1000);
+     limpiarLinea(1);
+       }  
+     }
+    break;
+}
+ 
+}  
+
+int leerBoton()
+{
+  int valorPinA4 = analogRead(A4);
+  if(valorPinA4>=500 && valorPinA4<530)
+  {
+    return BOTON_RESET;
+  }
+  if(valorPinA4>=650 && valorPinA4<700)
+  {
+    return BOTON_TEST_PASSWORD;
+  }else{
+    return NO_BOTON;
+  }
+}
+
+char leerTeclado(){
+  char caracter = '_';
+  for(int fila=0; fila<4; fila++){
+    digitalWrite(9-fila, LOW);
+    for(int columna=0; columna<4; columna++){
+      int valorLeido = digitalRead(5-columna);
+      if(valorLeido == LOW){
+   caracter = teclado[fila][columna];
+      }
+    }
+    digitalWrite(9-fila, HIGH);
+  }
+  return caracter;
+}
+
+void limpiarLinea(int linea){
+lcd.setCursor(0,linea);
+lcd.print("                ");  
+}
+
