@@ -4,7 +4,6 @@ Los códigos progresivamente se irán mejorando. Se modificarán tanto archivos 
 
 Puedes unirte a los grupos de `Telegram` donde hay personas como yo que pueden ayudarte de forma más concreta y fluida con dudas. Además de colaborar y publicar a la gente tus proyectos.
 
-- https://t.me/esp32es
 - https://t.me/arduinoGP
 - https://t.me/arduchino
 
