@@ -61,6 +61,8 @@ Para realizar cualquier compra se pueden hacer en cualquier tienda de confianza.
 
 # Mandar a pedir PCB
 
+Puedes crear tus propias PCB con el software correcto como EasyEDA o KiCAD (hay muchos más), enviar ese diseño a una empresa y que hagan realidad tu proyecto.
+
 https://jlcpcb.com/
 
 
