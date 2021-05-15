@@ -59,6 +59,11 @@ Para realizar cualquier compra se pueden hacer en cualquier tienda de confianza.
     - [Kit 37 sensores](https://es.aliexpress.com/item/4000495086798.html?spm=a2g0o.productlist.0.0.189a79554ODLzb&algo_pvid=a05079dc-4019-47eb-a066-409b665a2694&algo_expid=a05079dc-4019-47eb-a066-409b665a2694-1&btsid=2100bde316071124004178162e84a5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)
     - [Kit 45 sensores](https://es.aliexpress.com/item/33037137705.html?spm=a2g0o.productlist.0.0.189a79554ODLzb&algo_pvid=a05079dc-4019-47eb-a066-409b665a2694&algo_expid=a05079dc-4019-47eb-a066-409b665a2694-0&btsid=2100bde316071124004178162e84a5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)
 
+# Mandar a pedir PCB
+
+https://jlcpcb.com/
+
+
 # Webs de tutoriales y cosas útiles
 
 Crear circuitos / esquemas para tus proyectos de visualmente fácil:  
