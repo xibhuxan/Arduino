@@ -109,15 +109,17 @@ bool XibDebounceEdge::whenRisingEdge(bool inputData)
 
       if (inputDataState == HIGH)
       {
+        lastInputDataState = inputData;
         return true;
       }
     }
     else
     {
+      lastInputDataState = inputData;
       return false;
     }
   }
-  lastInputDataState = inputData;
+  
 }
 
 bool XibDebounceEdge::whenFallingEdge(bool inputData)
@@ -136,15 +138,17 @@ bool XibDebounceEdge::whenFallingEdge(bool inputData)
 
       if (inputDataState == LOW)
       {
+        lastInputDataState = inputData;
         return true;
       }
     }
     else
     {
+      lastInputDataState = inputData;
       return false;
     }
   }
-  lastInputDataState = inputData;
+  
 }
 
 bool XibDebounceEdge::whenActive(bool inputData)
@@ -156,7 +160,7 @@ bool XibDebounceEdge::whenActive(bool inputData)
 
   if ((millis() - lastDebounceTime) > debounceDuration)
   {
-
+    lastInputDataState = inputData;
     if (inputData)
     {
       return true;
@@ -166,7 +170,7 @@ bool XibDebounceEdge::whenActive(bool inputData)
       return false;
     }
   }
-  lastInputDataState = inputData;
+  
 }
 
 bool XibDebounceEdge::whenDeactive(bool inputData)
@@ -178,7 +182,7 @@ bool XibDebounceEdge::whenDeactive(bool inputData)
 
   if ((millis() - lastDebounceTime) > debounceDuration)
   {
-
+    lastInputDataState = inputData;
     if (!inputData)
     {
       return true;
@@ -188,5 +192,5 @@ bool XibDebounceEdge::whenDeactive(bool inputData)
       return false;
     }
   }
-  lastInputDataState = inputData;
+  
 }
