@@ -37,6 +37,8 @@ Las librerias creadas por mi son:
 
 La carpeta de ["FritzingParts"](FritzingParts) contiene una colección de archivos de fritzing de distintos componentes aquí utilizados.
 
+Plantilla para organizar un proyecto: [Plantilla](https://github.com/Xibhu/Tutoriales/tree/master/Programacion/General)
+
 Para reportar fallos utilizad el sistema de ["Issues"](https://github.com/Xibhu/Arduino/issues) de la web.
 
 En mi caso utilizo el editor de texto Visual Studio Code en linux con el plugin o extensión de `PlatformIO`. El tutorial de instalación y uso es el siguiente enlace: https://randomnerdtutorials.com/vs-code-platformio-ide-esp32-esp8266-arduino/
