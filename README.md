@@ -5,7 +5,6 @@ Repositorio dedicado al desarrollo y almacenamiento de códigos de Arduino y com
 
 Para usar este repositorio, puedes verlo a través de un navegador web y navegar entre las distintas carpetas que están clasificadas. Otra manera es descargar el repositorio entero en zip a través del botón download. En ambos casos, copia el código en tu editor de código favorito que compile para Arduino y añade las librerías correspondientes si fueran necesarias.
 
----
 ## Telegram
 
 Puedes unirte a los grupos de `Telegram` donde hay personas como yo que pueden ayudarte de forma más concreta y fluida con dudas. Además de colaborar y publicar a la gente los proyectos que estés realizando.
@@ -18,13 +17,11 @@ Otros grupos útiles de autómatas programables PLC y energías renovables.
 - https://t.me/plcyautomatas
 - https://t.me/energias_renovables
 
----
 
 ## Donaciones
 
 Puedes ayudar a este repositorio mediante una donación. [![paypal](https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZM8VWFAP5UUY&source=url)
 
----
 
 ## Clasificación de las carpetas
 
@@ -46,19 +43,13 @@ Las librerias creadas por mi son:
 
 La carpeta de ["FritzingParts"](FritzingParts) contiene una colección de archivos de fritzing de distintos componentes aquí utilizados.
 
----
-
 ## Plantilla proyectos
 
 Plantilla para organizar tus proyectos: [Plantilla](https://github.com/Xibhu/Tutoriales/tree/master/Programacion/General)
 
----
-
 ## Fallos
 
 Para reportar fallos utilizad el sistema de ["Issues"](https://github.com/Xibhu/Arduino/issues) de la web o comunicarlo a través de telegram.
-
----
 
 ## Editor de código
 
