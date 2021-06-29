@@ -1,7 +1,7 @@
 
 # XibDebounceEdge Library
 
-This library allows you to "watch" any bool variable and execute stuff in typical button cases. Can be used with buttons, sensors or any kind of bool variable you want to use with usual buttons functions.
+This library allows you to "watch" any bool variable and execute stuff in typical button cases and avoid the debounce effect. Can be used with buttons, sensors or any kind of bool variable you want to use with usual buttons functions.
 
 You should use this library because it allows you to manage buttons in a easy way. Also it's a lightweight library.
 
@@ -14,24 +14,24 @@ It's supposed to use one function per object. For instance:
 
 Allowed:
 ```
-XibDebounceEdge myDebounce(20);
-myDebounce.whenActive(myRead, myFunction);
+XibDebounceEdge myButtonOne(20);
+myButtonOne.whenActive(myRead, myFunction);
 ```
 
 Not allowed:
 ```
-XibDebounceEdge myDebounce(20);
-myDebounce.whenActive(myRead, myFunction);
-myDebounce.whenRisingEdge(myOtherRead, myOtherFunction);
+XibDebounceEdge myButtonOne(20);
+myButtonOne.whenActive(myRead, myFunction);
+myButtonOne.whenRisingEdge(myOtherRead, myOtherFunction);
 ```
 
 Solution:
 ```
-XibDebounceEdge myDebounce(20);
-XibDebounceEdge mySecondDebounce(20);
+XibDebounceEdge myButtonOne(20);
+XibDebounceEdge myButtonTwo(20);
 
-myDebounce.whenActive(myRead, myFunction);
-mySecondDebounce.whenRisingEdge(myOtherRead, myOtherFunction);
+myButtonOne.whenActive(myRead, myFunction);
+myButtonTwo.whenRisingEdge(myOtherRead, myOtherFunction);
 ```
 You can use the var "myRead" or "myOtherRead" in multiples objects if needed with no problem.
 
