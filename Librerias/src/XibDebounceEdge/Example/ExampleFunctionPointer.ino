@@ -32,7 +32,7 @@ void loop()
   //The exclamation "!" it's needed because i'm using the internal PULLUP, so the signal it's inverted (If I press the button, the digitalRead give me a FALSE, with "!" I get TRUE)
   bool reading = !digitalRead(buttonPin);
 
-  //There are two parameters, the variable you want to watch and the function you want to execute. In this case it's a lambda funcition, you write it directly (with its symbols), without a name.
+  //There are two parameters, the variable you want to watch and the function you want to execute. In this case you use a function, put the name and use parentheses with parameters if needed
 
   //LIBRARY FUNCTIONS
 
