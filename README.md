@@ -22,6 +22,9 @@ Otros grupos útiles de autómatas programables PLC y energías renovables.
 
 Puedes ayudar a este repositorio mediante una donación. [![paypal](https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZM8VWFAP5UUY&source=url)
 
+BTC: 1ERxd9ipFjoCB2L18Vp1hgTBjRqDLkyZqn
+
+SHIBA INU COIN: 0x91ea37c54662d618c71ce653c4a5bdb3598834da
 
 ## Clasificación de las carpetas
 
