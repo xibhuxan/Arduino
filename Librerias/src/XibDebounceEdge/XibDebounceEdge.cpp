@@ -1,6 +1,6 @@
 #include <XibDebounceEdge.h>
 
-XibDebounceEdge::XibDebounceEdge(uint32_t debounceDuration)
+XibDebounceEdge::XibDebounceEdge(uint16_t debounceDuration)
 {
   this->debounceDuration = debounceDuration;
 }

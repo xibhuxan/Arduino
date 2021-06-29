@@ -5,7 +5,7 @@ class XibDebounceEdge
 {
 private:
 public:
-    XibDebounceEdge(uint32_t debounceDuration);
+    XibDebounceEdge(uint16_t debounceDuration);
     ~XibDebounceEdge();
     //void functions
     void whenRisingEdge(bool inputData, void(*f)());
@@ -17,8 +17,8 @@ public:
     bool whenFallingEdge(bool inputData);
     bool whenActive(bool inputData);
     bool whenDeactive(bool inputData);
-    uint32_t debounceDuration;
-    uint32_t lastDebounceTime;
+    uint16_t debounceDuration;
+    uint16_t lastDebounceTime;
     bool lastInputDataState;
     bool inputDataState;
 };
