@@ -2,16 +2,7 @@
 #define XibPinModeDetect_h
 #include <Arduino.h>
 
-class XibPinModeDetect
-{
-private:
-public:
-    XibPinModeDetect(int pin);
-    ~XibPinModeDetect();
-    int getMode();
-    int pin;
-};
-
+uint8_t XibGetPinMode(uint8_t pin);
 
 
 #endif
