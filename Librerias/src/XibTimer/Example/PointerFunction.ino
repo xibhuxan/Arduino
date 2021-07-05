@@ -13,6 +13,7 @@ void loop()
 {
 
     //In this case you use a function created previously, put the name and use parentheses with parameters if needed
+    //Use this if only your function doesnt have parameters. If it have, use example "LambdaFunction.ino"
     temp1.cycleCompleted(changeLedState);
 }
 
