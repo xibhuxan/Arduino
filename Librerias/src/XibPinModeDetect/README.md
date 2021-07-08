@@ -1,4 +1,7 @@
 
+Created by Xibhu - Carlos MR - https://github.com/xibhu  
+Made in Canary islands, Spain
+
 # XibPinModeDetect Library
 
 This library allows you to check the current state of a pin. It could be useful when you are changing it and need to check the state.
