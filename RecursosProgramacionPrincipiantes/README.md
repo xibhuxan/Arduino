@@ -106,6 +106,7 @@ Desarrollo de librerías:
 http://www.lunegate.net/2015/10/tutorial-aprender-usar-librerias-en.html  
 https://www.geekfactory.mx/tutoriales/tutoriales-arduino/como-instalar-una-libreria-de-arduino/  
 https://arduino.github.io/arduino-cli/latest/library-specification/
+https://spencer.bliven.us/2012/01/18/arduino-ide-keywords/
 
 Realizar interfaces gráficas:  
 https://lvgl.io/
