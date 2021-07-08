@@ -141,6 +141,202 @@ Módulo MP3: https://www.dfrobot.com/wiki/index.php/DFPlayer_Mini_SKU:DFR0299
 
 Utilizar pulsadores sin resistencia: https://www.baldengineer.com/arduino-internal-pull-up-resistor-tutorial.html
 
+# Listado de videos
+
+## Ofrecido por @Sjoven65 - Santiago
+
+Listado de canales de YouTube
+
+BioMakers Industries
+
+Creamos Biosensores para mejorar la calidad de vida, accesibles , profesionales y nos divertimos mucho en el camino !
+
+https://www.youtube.com/channel/UC8CZ0rRlDamRPBdHcK0z1qQ
+
+
+Bitwise Ar
+
+Arduino desde cero
+
+https://www.youtube.com/channel/UC4unPLtykzwO7MB3IvaQZaA
+
+
+Cambatronics Online
+
+Canal dedicado a la electrónica, los microcontroladores y las maquinas cnc caseras.
+
+https://www.youtube.com/channel/UCCHq8Nj2o-_NJRj6ISLTn1g
+
+
+Editronikx
+
+Este canal esta dedicado a la enseñanza GRATUITA de la electrónica y la tecnología, hay tutoriales y cursos gratis de electrónica, robotica, programación , arduino, pic, raspberry, review tecnológicos, drones, computación  y mucho mas.
+
+https://www.youtube.com/user/editronikx
+
+
+
+El profe García
+
+Tutoriales de Robotica, Electrónica, Sistemas y Tecnología.
+
+https://www.youtube.com/user/elprofegarcia
+
+
+Electgpl
+
+El objetivo de este canal es compartir con ustedes distintos proyectos y tips sobre electrónica, contenido teórico que les ayude a comprender el funcionamiento de los dispositivos electrónicos desde el aspecto practico y académico.
+
+https://www.youtube.com/user/electgpl
+
+Lista de reproduccion de Arduino
+
+https://www.youtube.com/playlist?list=PLRCa_w53e23L5bgEbmCV1WhgSpBv1d9d0
+
+
+ELECTROALL (Control Electrónico Industrial Programado)
+
+En este canal usted encontrará información, proyectos y tutoriales a cerca de electrónica, electricidad y automatización industrial.
+
+https://www.youtube.com/channel/UCBE6HbxFcSO-CPYF4wtGOyg
+
+
+ELECTRONOOBS en Español
+
+Este es el segundo canal de ELECTRONOOBS donde haré videos en vivo, blogs y tutoriales de electronica en español
+
+https://www.youtube.com/channel/UCL_QvUUeriC6q610RCXDlSQ
+
+ELECTRONOOBS (En ingles)
+
+https://www.youtube.com/channel/UCjiVhIvGmRZixSzupD0sS9Q
+
+
+Electónica FP ( Teoría de electrónica en general)
+
+Soy Fernando Manso, profesor de electrónica, físico y curioso patológico. Aquí hablamos de electrónica, para todos/as… Poca Broma con la electrónica.
+
+https://www.youtube.com/channel/UCeidauAIxx_JeNcrleaPDqw
+
+
+HobbyElectrónica
+
+Mi nombre es Bryan, soy un estudiante de Mecatrónica y siempre me ha gustado la tecnología, pero no solo eso sino como funciona.
+En este canal pretendo mostrarte un poco del desarrollo de tecnología, aun que es básico, se puede hacer mucho. Y recuerda que la practica hace al maestro.
+
+Disfruten de lo que pueden hacer ustedes mismos.
+
+https://www.youtube.com/user/Jr69192/about
+
+
+Humberto Higinio
+
+Bienvenidos a mi canal de Electrónica, Ciencia y Tecnología, aquí encontraras videos interesantes relacionados a Electrónica, Electricidad, Robótica y de Sistemas Informáticos
+
+https://www.youtube.com/user/HHSolis
+
+
+J_RPM (Proyectos avanzados)
+
+Canal de video, destinado para compartir y divulgar información técnica.
+
+https://www.youtube.com/channel/UCbHXxa7a84fsFGTNYt8EXtQ
+
+
+Misael Saenz
+
+n este canal se pondrán ver videotutoriales sobre electrónica, robótica, programación, software, tips tecnológicos y manipulación de imágenes usando photoshop.
+
+https://www.youtube.com/user/misa2pac
+
+
+Mundo Electrónica (Electronica en general)
+
+¡Hola viajero de internet!. Mi nombre es Juan Manuel, y éste canal es dirigido por mí. Aquí, encontrarás contenido de electrónica, desde teoría hasta práctica, con proyectos sencillos escolares, hasta proyectos de mayor complejidad, pero todo con la mejor explicación posible. ¡Saludos viajero!
+
+https://www.youtube.com/channel/UCKlW3gFn1bHTdQSD1g914Uw
+
+
+RAOM Electrónica
+
+Este canal está dirigido hacia todo el público, que desee realizar proyectos de electrónica y tener conocimiento de algunos principios básicos.
+
+El canal tiene un fin educativo. Enseñar a personas que quieren entrar en este nuevo mundo de la electrónica.
+
+https://www.youtube.com/channel/UCjaS6z3FmWeVas8ufUCHiHA
+
+
+SETISAEDU
+
+Tiene lista de reproduccion de proyectos avanzados
+
+https://www.youtube.com/channel/UCa7wuIODx6kUsNAnhWqWoYQ
+
+Sr Ferrete
+
+Hola a todos, soy un aficionado a la tecnología, los juegos  y ese pequeño gran mundo "MAKER", en este canal hablaremos de todas estas cosas y más. Espero traeros un montón de vídeos con tutoriales, review y pequeños (pero interesantes) proyectos de arduino.
+
+https://www.youtube.com/user/ferrete
+
+
+Tech Krowd
+
+Proyectos con arduino
+
+https://www.youtube.com/channel/UC9TXm_X_JeVPLZtLEK1S3xA
+
+
+TodoElectronica21
+
+Electrónica - Tecnología - Robótica - Arduino - Raspberry - IoT - PCs - Impresion3D - Gadgets - Programación
+
+https://www.youtube.com/user/TodoElectronica21
+
+## Ofrecido por @winsrrow
+
+Canales recomendados de electronica:
+En castellano: 
+
+electrónicaFP
+https://youtube.com/c/Electr%C3%B3nicaFP
+
+Inglés: 
+
+EEVLOG https://youtube.com/c/EevblogDave
+
+Learn electronics
+https://youtube.com/c/learnelectronics
+
+W2AEW
+https://youtube.com/user/w2aew
+
+Scullom hobby electronics
+https://youtube.com/channel/UCDqryeq1kMDSEQwltWqASrA
+
+Fesz
+https://youtube.com/c/FesZElectronics
+
+Altium academy (recomendable sobretodo los webinars y conferencias, también del canal de altium) 
+
+https://youtube.com/c/AltiumAcademy
+
+Electronica digital:
+
+Ben eater
+https://youtube.com/c/BenEater
+
+
+Tipo maker:
+
+Andreas spiess
+https://youtube.com/c/AndreasSpiess
+
+Marco reps
+https://youtube.com/c/MarcoReps
+ 
+Great scott
+https://youtube.com/c/greatscottlab
+
 # Advertencia
 
 Todos los enlaces, PDF, imágenes y cualquier tipo de recurso, pertenecen a sus respectivos autores.
