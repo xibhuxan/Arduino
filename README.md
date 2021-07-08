@@ -36,11 +36,11 @@ La carpeta de ["ProyectosComplejos"](ProyectosComplejos) son aquellos que se con
 
 La carpeta de ["Librerias"](Librerias) contiene las librerias utilizadas, ya sean oficiales como no oficiales. Las creadas por mi se caracterizan por tener `Xib` en el nombre.
 Las librerias creadas por mi son:  
-- XibDebounceEdge: Permite utilizar botones (o cualquier entrada digital) evitando el debounce y poder usar las acciones asociadas a un botón.
-- XibStave: Permite interpretar pentagramas musicales en arduino, con varios altavoces, cada uno con una melodía de forma sincronizada.
-- XibTempo: Permite ejecutar funciones cada X tiempo.
-- XibTM1638: Permite utilizar esa placa de una manera más fácil.
-- XibXcreen: Gestor de botones gráficos en las pantallas compatibles con adafruitLCD.
+- [XibDebounceEdge](Librerias/src/XibDebounceEdge): Permite utilizar botones (o cualquier entrada digital) evitando el debounce y poder usar las acciones asociadas a un botón.
+- [XibStave](Librerias/src/XibStave): Permite interpretar pentagramas musicales en arduino, con varios altavoces, cada uno con una melodía de forma sincronizada.
+- [XibTempo](Librerias/src/XibTimer): Permite ejecutar funciones cada X tiempo.
+- [XibTM1638](Librerias/src/XibTM1638): Permite utilizar esa placa de una manera más fácil.
+- [XibXcreen](Librerias/src/XibXcreen): Gestor de botones gráficos en las pantallas compatibles con adafruitLCD.
 
 La carpeta de ["FritzingParts"](FritzingParts) contiene una colección de archivos de fritzing de distintos componentes aquí utilizados.
 
