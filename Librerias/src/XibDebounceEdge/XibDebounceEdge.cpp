@@ -2,195 +2,193 @@
 
 XibDebounceEdge::XibDebounceEdge(uint16_t debounceDuration)
 {
-  this->debounceDuration = debounceDuration;
+    this->debounceDuration = debounceDuration;
 }
-
+XibDebounceEdge::XibDebounceEdge()
+{
+}
 XibDebounceEdge::~XibDebounceEdge() {}
 
 //void functions
 
 void XibDebounceEdge::whenRisingEdge(bool inputData, void (*f)())
 {
-  if (inputData != lastInputDataState)
-  {
-    lastDebounceTime = millis();
-  }
-
-  if ((millis() - lastDebounceTime) > debounceDuration)
-  {
-
-    if (inputData != inputDataState)
+    if (inputData != lastInputDataState)
     {
-      inputDataState = inputData;
-
-      if (inputDataState == HIGH)
-      {
-        f();
-      }
+        lastDebounceTime = millis();
     }
-  }
-  lastInputDataState = inputData;
+
+    if ((millis() - lastDebounceTime) > debounceDuration)
+    {
+
+        if (inputData != inputDataState)
+        {
+            inputDataState = inputData;
+
+            if (inputDataState == HIGH)
+            {
+                f();
+            }
+        }
+    }
+    lastInputDataState = inputData;
 }
 
 void XibDebounceEdge::whenFallingEdge(bool inputData, void (*f)())
 {
-  if (inputData != lastInputDataState)
-  {
-    lastDebounceTime = millis();
-  }
-
-  if ((millis() - lastDebounceTime) > debounceDuration)
-  {
-
-    if (inputData != inputDataState)
+    if (inputData != lastInputDataState)
     {
-      inputDataState = inputData;
-
-      if (inputDataState == LOW)
-      {
-        f();
-      }
+        lastDebounceTime = millis();
     }
-  }
-  lastInputDataState = inputData;
+
+    if ((millis() - lastDebounceTime) > debounceDuration)
+    {
+
+        if (inputData != inputDataState)
+        {
+            inputDataState = inputData;
+
+            if (inputDataState == LOW)
+            {
+                f();
+            }
+        }
+    }
+    lastInputDataState = inputData;
 }
 
 void XibDebounceEdge::whenActive(bool inputData, void (*f)())
 {
-  if (inputData != lastInputDataState)
-  {
-    lastDebounceTime = millis();
-  }
-
-  if ((millis() - lastDebounceTime) > debounceDuration)
-  {
-
-    if (inputData)
+    if (inputData != lastInputDataState)
     {
-      f();
+        lastDebounceTime = millis();
     }
-  }
-  lastInputDataState = inputData;
+
+    if ((millis() - lastDebounceTime) > debounceDuration)
+    {
+
+        if (inputData)
+        {
+            f();
+        }
+    }
+    lastInputDataState = inputData;
 }
 
 void XibDebounceEdge::whenDeactive(bool inputData, void (*f)())
 {
-  if (inputData != lastInputDataState)
-  {
-    lastDebounceTime = millis();
-  }
-
-  if ((millis() - lastDebounceTime) > debounceDuration)
-  {
-
-    if (!inputData)
+    if (inputData != lastInputDataState)
     {
-      f();
+        lastDebounceTime = millis();
     }
-  }
-  lastInputDataState = inputData;
+
+    if ((millis() - lastDebounceTime) > debounceDuration)
+    {
+
+        if (!inputData)
+        {
+            f();
+        }
+    }
+    lastInputDataState = inputData;
 }
 
 //Bool functions
 
 bool XibDebounceEdge::whenRisingEdge(bool inputData)
 {
-  if (inputData != lastInputDataState)
-  {
-    lastDebounceTime = millis();
-  }
-
-  if ((millis() - lastDebounceTime) > debounceDuration)
-  {
-
-    if (inputData != inputDataState)
+    if (inputData != lastInputDataState)
     {
-      inputDataState = inputData;
+        lastDebounceTime = millis();
+    }
 
-      if (inputDataState == HIGH)
-      {
-        lastInputDataState = inputData;
-        return true;
-      }
-    }
-    else
+    if ((millis() - lastDebounceTime) > debounceDuration)
     {
-      lastInputDataState = inputData;
-      return false;
+
+        if (inputData != inputDataState)
+        {
+            inputDataState = inputData;
+
+            if (inputDataState == HIGH)
+            {
+                lastInputDataState = inputData;
+                return true;
+            }
+        }
+        else
+        {
+            lastInputDataState = inputData;
+            return false;
+        }
     }
-  }
-  
 }
 
 bool XibDebounceEdge::whenFallingEdge(bool inputData)
 {
-  if (inputData != lastInputDataState)
-  {
-    lastDebounceTime = millis();
-  }
-
-  if ((millis() - lastDebounceTime) > debounceDuration)
-  {
-
-    if (inputData != inputDataState)
+    if (inputData != lastInputDataState)
     {
-      inputDataState = inputData;
+        lastDebounceTime = millis();
+    }
 
-      if (inputDataState == LOW)
-      {
-        lastInputDataState = inputData;
-        return true;
-      }
-    }
-    else
+    if ((millis() - lastDebounceTime) > debounceDuration)
     {
-      lastInputDataState = inputData;
-      return false;
+
+        if (inputData != inputDataState)
+        {
+            inputDataState = inputData;
+
+            if (inputDataState == LOW)
+            {
+                lastInputDataState = inputData;
+                return true;
+            }
+        }
+        else
+        {
+            lastInputDataState = inputData;
+            return false;
+        }
     }
-  }
-  
 }
 
 bool XibDebounceEdge::whenActive(bool inputData)
 {
-  if (inputData != lastInputDataState)
-  {
-    lastDebounceTime = millis();
-  }
+    if (inputData != lastInputDataState)
+    {
+        lastDebounceTime = millis();
+    }
 
-  if ((millis() - lastDebounceTime) > debounceDuration)
-  {
-    lastInputDataState = inputData;
-    if (inputData)
+    if ((millis() - lastDebounceTime) > debounceDuration)
     {
-      return true;
+        lastInputDataState = inputData;
+        if (inputData)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
-    else
-    {
-      return false;
-    }
-  }
-  
 }
 
 bool XibDebounceEdge::whenDeactive(bool inputData)
 {
-  if (inputData != lastInputDataState)
-  {
-    lastDebounceTime = millis();
-  }
+    if (inputData != lastInputDataState)
+    {
+        lastDebounceTime = millis();
+    }
 
-  if ((millis() - lastDebounceTime) > debounceDuration)
-  {
-    lastInputDataState = inputData;
-    if (!inputData)
+    if ((millis() - lastDebounceTime) > debounceDuration)
     {
-      return true;
+        lastInputDataState = inputData;
+        if (!inputData)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
-    else
-    {
-      return false;
-    }
-  }
-  
 }
