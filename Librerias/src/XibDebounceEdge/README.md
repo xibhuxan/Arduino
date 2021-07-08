@@ -1,4 +1,7 @@
 
+Created by Xibhu - Carlos MR - https://github.com/xibhu  
+Made in Canary islands, Spain
+
 # XibDebounceEdge Library
 
 This library allows you to "watch" any bool variable and execute stuff in typical button cases and avoid the debounce effect. Can be used with buttons, sensors or any kind of bool variable you want to use with usual buttons functions.
