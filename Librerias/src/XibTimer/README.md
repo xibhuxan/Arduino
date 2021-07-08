@@ -1,4 +1,6 @@
 
+Created by Xibhu - Carlos MR - https://github.com/xibhu  
+Made in Canary islands, Spain
 # XibTimer Library
 
 This library is a timer, allows you to execute code every "X" time. You can enable or disable it. Also you can change the time if needed.

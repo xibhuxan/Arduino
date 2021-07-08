@@ -7,6 +7,7 @@ private:
 public:
     //create a timer with the time you want in milliseconds
     XibTimer(uint32_t duration);
+    XibTimer();
     ~XibTimer();
 
     //let the cycle functions to execute code

@@ -6,6 +6,10 @@ XibTimer::XibTimer(uint32_t duration)
     enabled = true;
 }
 
+XibTimer::XibTimer()
+{
+}
+
 XibTimer::~XibTimer()
 {
 }
