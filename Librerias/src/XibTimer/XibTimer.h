@@ -4,6 +4,10 @@
 class XibTimer
 {
 private:
+    uint32_t lastMillisTime;
+    uint32_t timerDuration;
+    bool enabled;
+
 public:
     //create a timer with the time you want in milliseconds
     XibTimer(uint32_t duration);
@@ -30,10 +34,6 @@ public:
 
     //returns the time remaining to complete the cycle
     uint32_t timeRemaining();
-
-    uint32_t lastMillisTime;
-    uint32_t timerDuration;
-    bool enabled;
 };
 
 #endif
