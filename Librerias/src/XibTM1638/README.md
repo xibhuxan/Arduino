@@ -9,7 +9,7 @@ This library is NOT intended to be "eficient" or "microcontroller friendly". It 
 
 Before start, you compulsorily need the library "XibTimer" to use "XibTM1638" because of animations. Despite being included in the zip as a extra folder, you can download it in https://github.com/Xibhu/Arduino/blob/master/Librerias/XibTimer.zip if you have any problem. Put it together in the library folder as usual.
 
-And more information aboute the board here: https://blog.3d-logic.com/2015/01/10/using-a-tm1638-based-board-with-arduino/
+And more information about the board here: https://blog.3d-logic.com/2015/01/10/using-a-tm1638-based-board-with-arduino/
 
 In the "[doc](doc)" folder you have the dathasheet and some more info.
 
