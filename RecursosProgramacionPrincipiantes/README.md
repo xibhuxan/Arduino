@@ -59,6 +59,33 @@ Para realizar cualquier compra se pueden hacer en cualquier tienda de confianza.
     - [Kit 37 sensores](https://es.aliexpress.com/item/4000495086798.html?spm=a2g0o.productlist.0.0.189a79554ODLzb&algo_pvid=a05079dc-4019-47eb-a066-409b665a2694&algo_expid=a05079dc-4019-47eb-a066-409b665a2694-1&btsid=2100bde316071124004178162e84a5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)
     - [Kit 45 sensores](https://es.aliexpress.com/item/33037137705.html?spm=a2g0o.productlist.0.0.189a79554ODLzb&algo_pvid=a05079dc-4019-47eb-a066-409b665a2694&algo_expid=a05079dc-4019-47eb-a066-409b665a2694-0&btsid=2100bde316071124004178162e84a5&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)
 
+
+# Simuladores 
+No van muy allá, pero pueden hacer el apaño.
+
+https://www.simulide.com/p/home.html
+
+Listado con una breve explicación:  
+https://www.xataka.com/basics/mejores-17-simuladores-arduino-para-pc
+
+https://github.com/Paulware/ArduinoDebugger/  
+https://xevro.be/products/  
+https://sourceforge.net/projects/arduinosim/  
+https://www.circuitlab.com/  
+https://www.autodesk.com/products/eagle/free-download  
+https://easyeda.com/  
+http://emulare.sourceforge.net/  
+https://fritzing.org/  
+https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html  
+https://explore.partquest.com/  
+https://www.labcenter.com/downloads/  
+http://gordonknight.co.uk/joomla/simduino  
+https://www.tinkercad.com/  
+https://www.sites.google.com/site/unoardusim/services  
+https://www.virtualbreadboard.com/  
+http://www.virtronics.com.au/  
+https://www.yenka.com/en/Free_home_licences/  
+
 # Mandar a pedir PCB
 
 Puedes crear tus propias PCB con el software correcto como EasyEDA o KiCAD (hay muchos más), enviar ese diseño a una empresa y que hagan realidad tu proyecto.
