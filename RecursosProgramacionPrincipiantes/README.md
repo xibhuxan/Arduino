@@ -86,6 +86,9 @@ https://www.virtualbreadboard.com/
 http://www.virtronics.com.au/  
 https://www.yenka.com/en/Free_home_licences/  
 
+Editor en lenguaje ladder  
+https://hello.iecuino.com/?gclid=EAIaIQobChMIjdnXysOF8gIVjkMdCR2kng-YEAEYASAAEgKiVPD_BwE
+
 # Mandar a pedir PCB
 
 Puedes crear tus propias PCB con el software correcto como EasyEDA o KiCAD (hay muchos más), enviar ese diseño a una empresa y que hagan realidad tu proyecto.
