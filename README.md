@@ -9,20 +9,11 @@ Para usar este repositorio, puedes verlo a través de un navegador web y navegar
 
 Puedes unirte a los grupos de `Telegram` donde hay personas como yo que pueden ayudarte de forma más concreta y fluida con dudas. Además de colaborar y publicar a la gente los proyectos que estés realizando.
 
-- (Donde soy admin) https://t.me/arduinoGP
 - https://t.me/arduchino
-
-Otros grupos útiles de autómatas programables PLC y energías renovables.
-
-- https://t.me/plcyautomatas
-- https://t.me/energias_renovables
-
 
 ## Donaciones
 
 Puedes ayudar a este repositorio mediante una donación. [![paypal](https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZM8VWFAP5UUY&source=url)
-
-SHIBA INU COIN: 0x91ea37c54662d618c71ce653c4a5bdb3598834da
 
 ## Clasificación de las carpetas
 
