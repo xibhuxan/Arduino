@@ -11,10 +11,6 @@ Puedes unirte a los grupos de `Telegram` donde hay personas como yo que pueden a
 
 - https://t.me/arduchino
 
-## Donaciones
-
-Puedes ayudar a este repositorio mediante una donación. [![paypal](https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CZM8VWFAP5UUY&source=url)
-
 ## Clasificación de las carpetas
 
 La carpeta de ["RecursosProgramacionPrincipiantes"](RecursosProgramacionPrincipiantes) posee información útil en forma de libros y PDF(se recomienda encarecidamente su lectura) con tutoriales, ejercicios básicos e imágenes del arduino para principiantes. Estos recursos pertenecen a sus respectivos autores. Además contiene enlaces útiles donde consultar distintas cosas.
