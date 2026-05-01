@@ -1,4 +1,75 @@
-.directory
+# Archivos y carpetas generados por el sistema
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de bloqueo temporal
+.*~lock*
+.*.tmp
+.*.swp
+.*.swo
+*.bak
+*.backup
+*.old
+
+# Archivos y carpetas de PlatformIO
+.pio/
+.piolib/
+.platformio/
+
+# Archivos generados por VS Code
 .vscode/
-.json
-build
+.idea/
+*.sublime-*
+.project
+.cproject
+.classpath
+.settings/
+*.tmproj
+
+# Archivos de compilación Arduino/PlatformIO
+build/
+*.pio/
+.platformio/packages/
+*.elf
+*.bin
+*.hex
+*.map
+
+# Archivos temporales de editor
+*.pyc
+__pycache__/
+*.log
+*.py,o
+
+# Imágenes temporales
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+*.pdf
+
+# Archivos de simuladores
+*fzz
+*fzpz
+
+# Caches
+.cache/
+.npm/
+.pnpm/
+.yarn/
+
+# Librerías instaladas
+libraries/
+node_modules/
+
+# Archivos de backup automático
+*.ba?k
+*.sw?
+.Swo*
+
+# Archivos de impresión
+.printed
